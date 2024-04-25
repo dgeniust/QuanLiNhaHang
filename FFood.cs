@@ -20,6 +20,8 @@ namespace QuanLiNhaHang
         UC_Food uc_f;
         public int slg;
         public string mamon;
+        public string madhtemp = "";
+        DatMonDAO dmD = new DatMonDAO();
         public FFood()
         {
             InitializeComponent();
@@ -31,32 +33,19 @@ namespace QuanLiNhaHang
         }
         bool sidebar_timer;
         public Label LBL_NUMBEROGFOOD => lbl_NumberOfFood;
-        private void sidebarTimer_Tick(object sender, EventArgs e)
-        {
-            if (sidebar_timer)
-            {
-                SideBar_FlowPanel.Width -= 30;
-                if (SideBar_FlowPanel.Width == SideBar_FlowPanel.MinimumSize.Width)
-                {
-                    sidebar_timer = false;
-                    sidebarTimer.Stop();
-                }
-            }
-            else
-            {
-                SideBar_FlowPanel.Width += 30;
-                if (SideBar_FlowPanel.Width == SideBar_FlowPanel.MaximumSize.Width)
-                {
-                    sidebar_timer = true;
-                    sidebarTimer.Stop();
-                }
-            }
-        }
+        
 
         private void FFood_Load(object sender, EventArgs e)
         {
             string query = "Select * from monan";
             GeneratePanel(query, Panel_Food);
+            string query1 = "select MAX(madh) from donhang";
+            DataTable dt = db.LoadData(query1);
+            foreach(DataRow dr in dt.Rows)
+            {
+               bt.madh = dr[0].ToString();
+            }
+            madhtemp = bt.madh;
         }
 
         public void GeneratePanel(string query, Panel storage_panel)
@@ -80,14 +69,43 @@ namespace QuanLiNhaHang
                 storage_panel.Controls.Add(panel);
             }
         }
+        public string tempdh = "";
         public void AddFood(object sender, EventArgs e)
         {
-            string query = string.Format("Insert into datmon (MaDH, MaTK, MaMon, Slmon, GhiChu, MaBan) VALUES ('{0}','{1}','{2}',{3},'{4}','{5}')",bt.madh, bt.matk, mamon,uc_f.LBL_NUMBER.Text, "", bt.maban);
-            db.ThucThi(query);
+            DatMon dm = new DatMon(bt.madh, bt.matk, mamon, Convert.ToInt32(uc_f.LBL_NUMBER.Text), "NOTE", bt.maban);
+            dmD.AddTable(dm);
+            tempdh = dm.madh;
         }
         private void btn_Menu_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
+        }
+
+        private void btn_ShowFood_Click(object sender, EventArgs e)
+        {
+            FBill fb = new FBill(bt, tempdh);
+            fb.ShowDialog();
+        }
+        private void sidebarTimer_Tick(object sender, EventArgs e)
+        {
+            if (sidebar_timer)
+            {
+                SideBar_FlowPanel.Width -= 30;
+                if (SideBar_FlowPanel.Width == SideBar_FlowPanel.MinimumSize.Width)
+                {
+                    sidebar_timer = false;
+                    sidebarTimer.Stop();
+                }
+            }
+            else
+            {
+                SideBar_FlowPanel.Width += 30;
+                if (SideBar_FlowPanel.Width == SideBar_FlowPanel.MaximumSize.Width)
+                {
+                    sidebar_timer = true;
+                    sidebarTimer.Stop();
+                }
+            }
         }
     }
 }

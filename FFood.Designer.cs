@@ -45,6 +45,8 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.Panel_Food = new System.Windows.Forms.FlowLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.lbl_NumberOfFood = new System.Windows.Forms.Label();
+            this.Panel_Bill = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_ShowFood = new System.Windows.Forms.PictureBox();
             this.btn_Menu = new System.Windows.Forms.PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -52,7 +54,6 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_NumberOfFood = new System.Windows.Forms.Label();
             this.SideBar_FlowPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -211,6 +212,24 @@
             this.panel11.Size = new System.Drawing.Size(456, 141);
             this.panel11.TabIndex = 1;
             // 
+            // lbl_NumberOfFood
+            // 
+            this.lbl_NumberOfFood.AutoSize = true;
+            this.lbl_NumberOfFood.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_NumberOfFood.Location = new System.Drawing.Point(1190, 34);
+            this.lbl_NumberOfFood.Name = "lbl_NumberOfFood";
+            this.lbl_NumberOfFood.Size = new System.Drawing.Size(18, 20);
+            this.lbl_NumberOfFood.TabIndex = 4;
+            this.lbl_NumberOfFood.Text = "0";
+            // 
+            // Panel_Bill
+            // 
+            this.Panel_Bill.Location = new System.Drawing.Point(1153, 45);
+            this.Panel_Bill.MaximumSize = new System.Drawing.Size(435, 497);
+            this.Panel_Bill.Name = "Panel_Bill";
+            this.Panel_Bill.Size = new System.Drawing.Size(0, 0);
+            this.Panel_Bill.TabIndex = 5;
+            // 
             // btn_ShowFood
             // 
             this.btn_ShowFood.Image = global::QuanLiNhaHang.Properties.Resources.icons8_cart_24;
@@ -220,6 +239,7 @@
             this.btn_ShowFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_ShowFood.TabIndex = 3;
             this.btn_ShowFood.TabStop = false;
+            this.btn_ShowFood.Click += new System.EventHandler(this.btn_ShowFood_Click);
             // 
             // btn_Menu
             // 
@@ -332,20 +352,12 @@
             this.guna2Button6.Text = "Công việc";
             this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // lbl_NumberOfFood
-            // 
-            this.lbl_NumberOfFood.AutoSize = true;
-            this.lbl_NumberOfFood.Location = new System.Drawing.Point(1190, 34);
-            this.lbl_NumberOfFood.Name = "lbl_NumberOfFood";
-            this.lbl_NumberOfFood.Size = new System.Drawing.Size(14, 16);
-            this.lbl_NumberOfFood.TabIndex = 4;
-            this.lbl_NumberOfFood.Text = "0";
-            // 
             // FFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 680);
+            this.Controls.Add(this.Panel_Bill);
             this.Controls.Add(this.lbl_NumberOfFood);
             this.Controls.Add(this.btn_ShowFood);
             this.Controls.Add(this.Panel_Food);
@@ -397,5 +409,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.PictureBox btn_ShowFood;
         private System.Windows.Forms.Label lbl_NumberOfFood;
+        private System.Windows.Forms.FlowLayoutPanel Panel_Bill;
     }
 }

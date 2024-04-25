@@ -51,7 +51,7 @@ namespace QuanLiNhaHang
 
         private void btn_BookTable_Click(object sender, EventArgs e)
         {
-            BookTable bt = new BookTable("0", txt_MaTK.Text, Convert.ToInt32(txt_Slg.Text), txt_MaBan.Text, dateTimePicker.Value.Date);
+            BookTable bt = new BookTable("", txt_MaTK.Text, Convert.ToInt32(txt_Slg.Text), txt_MaBan.Text, dateTimePicker.Value.Date);
             btDAO.AddTable(bt);
             FFood food = new FFood(bt);
             food.Show();

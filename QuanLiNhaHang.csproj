@@ -54,10 +54,19 @@
   <ItemGroup>
     <Compile Include="Class\BookTable.cs" />
     <Compile Include="Class\BookTableDAO.cs" />
+    <Compile Include="Class\DatMon.cs" />
     <Compile Include="Class\DBConnection.cs" />
     <Compile Include="Class\Employee.cs" />
+    <Compile Include="Class\EmployeeDAO.cs" />
     <Compile Include="Class\Food.cs" />
+    <Compile Include="Class\DatMonDAO.cs" />
     <Compile Include="Class\Table.cs" />
+    <Compile Include="FBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBill.Designer.cs">
+      <DependentUpon>FBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="FBookTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +111,12 @@
     <Compile Include="User Control\UC_Food.Designer.cs">
       <DependentUpon>UC_Food.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Control\UC_FoodBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UC_FoodBill.Designer.cs">
+      <DependentUpon>UC_FoodBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control\UC_Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +129,9 @@
     <Compile Include="User Control\UC_Register.Designer.cs">
       <DependentUpon>UC_Register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FBill.resx">
+      <DependentUpon>FBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FBookTable.resx">
       <DependentUpon>FBookTable.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Food.resx">
       <DependentUpon>UC_Food.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UC_FoodBill.resx">
+      <DependentUpon>UC_FoodBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control\UC_Login.resx">
       <DependentUpon>UC_Login.cs</DependentUpon>

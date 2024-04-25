@@ -17,6 +17,7 @@ namespace QuanLiNhaHang
     {
         DBConnection db = new DBConnection();
         bool sidebar_timer;
+        EmployeeDAO empDAO = new EmployeeDAO();
         public FEmployee()
         {
             InitializeComponent();
@@ -67,7 +68,11 @@ namespace QuanLiNhaHang
         {
             sidebarTimer.Start();
         }
-
+        public void LoadForm()
+        {
+            string query = "SELECT * FROM udf_ThongTinNhanVien('%%')";
+            GeneratePanel(query, Panel_NV);
+        }
         private void FEmployee_Load(object sender, EventArgs e)
         {
             string query = "Select * from V_ThongTinNhanVien";
@@ -76,8 +81,29 @@ namespace QuanLiNhaHang
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * from f_TimkiemNhanvien(N'" + txt_Search.Text + "')";
+            string query = "SELECT * from f_TimkiemNhanvien(N'%" + txt_Search.Text + "%')";
             GeneratePanel(query, Panel_NV);
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee(txt_MaNV.Text.ToUpper(), txt_Name.Text, txt_SDT.Text,txt_CV.Text.ToUpper(), Convert.ToDateTime(null), null);
+            empDAO.Add(emp);
+            LoadForm();
+        }
+
+        private void btn_Fix_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee(txt_MaNV.Text.ToUpper(), txt_Name.Text, txt_SDT.Text, txt_CV.Text.ToUpper(), Convert.ToDateTime(null), null);
+            empDAO.Fix(emp);
+            LoadForm();
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            Employee emp = new Employee(txt_MaNV.Text.ToUpper(), txt_Name.Text, txt_SDT.Text, txt_CV.Text.ToUpper(), Convert.ToDateTime(null), null);
+            empDAO.Delete(emp);
+            LoadForm();
         }
     }
 }
