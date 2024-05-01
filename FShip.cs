@@ -16,6 +16,7 @@ namespace QuanLiNhaHang
     public partial class FShip : Form
     {
         DBConnection db = new DBConnection();
+        DatHangDAO dhDAO = new DatHangDAO();
         Food food;
         public Guna2TextBox TXT_MAMON => txt_MaMon;
         public FShip()
@@ -49,6 +50,25 @@ namespace QuanLiNhaHang
         {
             string query = "SELECT * FROM udf_TimKiemMonAnTheoTen(N'%"+txt_Search.Text+"%')";
             GeneratePanel(query, Panel_Food);
+        }
+
+        private void btn_BookShip_Click(object sender, EventArgs e)
+        {
+            
+            DatHang dh = new DatHang("",txt_MaTK.Text,txt_MaMon.Text,Convert.ToInt32(txt_slg.Text),txt_GhiChu.Text,txt_Address.Text,"");
+            dhDAO.BookShip(dh);
+
+            MessageBox.Show(dh.madh);
+        }
+
+        private void FShip_Load(object sender, EventArgs e)
+        {
+            /*string query1 = "select MAX(madh) from donhang";
+            DataTable dt = db.LoadData(query1);
+            foreach (DataRow dr in dt.Rows)
+            {
+                dm.madh = dr[0].ToString();
+            }*/
         }
     }
 }

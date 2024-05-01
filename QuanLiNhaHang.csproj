@@ -63,6 +63,8 @@
     <Compile Include="Class\FoodDAO.cs" />
     <Compile Include="Class\Table.cs" />
     <Compile Include="Class\ThucKhach.cs" />
+    <Compile Include="DatHang.cs" />
+    <Compile Include="DatHangDAO.cs" />
     <Compile Include="FBill.cs">
       <SubType>Form</SubType>
     </Compile>
