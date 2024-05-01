@@ -35,42 +35,40 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.lbl_NumberOfFood = new System.Windows.Forms.Label();
             this.Panel_Bill = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_ShowFood = new System.Windows.Forms.PictureBox();
             this.SideBar_FlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Menu = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_Home = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_DatHang = new Guna.UI2.WinForms.Guna2Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btn_DatMon = new Guna.UI2.WinForms.Guna2Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btn_ThucKhach = new Guna.UI2.WinForms.Guna2Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.btn_DatBan = new Guna.UI2.WinForms.Guna2Button();
             this.Panel_Settings = new System.Windows.Forms.Panel();
             this.btn_Upload = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.btn_Fix = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Add = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Price = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_TenMon = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_MaMon = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.btn_Fix = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Add = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Menu = new System.Windows.Forms.PictureBox();
+            this.btn_Home = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_DatHang = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_DatMon = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_ThucKhach = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_DatBan = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_ShowFood = new System.Windows.Forms.PictureBox();
             this.Panel_Food.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ShowFood)).BeginInit();
             this.SideBar_FlowPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -78,6 +76,8 @@
             this.panel14.SuspendLayout();
             this.Panel_Settings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ShowFood)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebarTimer
@@ -126,17 +126,6 @@
             this.Panel_Bill.Size = new System.Drawing.Size(0, 0);
             this.Panel_Bill.TabIndex = 5;
             // 
-            // btn_ShowFood
-            // 
-            this.btn_ShowFood.Image = global::QuanLiNhaHang.Properties.Resources.icons8_cart_24;
-            this.btn_ShowFood.Location = new System.Drawing.Point(1153, 12);
-            this.btn_ShowFood.Name = "btn_ShowFood";
-            this.btn_ShowFood.Size = new System.Drawing.Size(34, 33);
-            this.btn_ShowFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_ShowFood.TabIndex = 3;
-            this.btn_ShowFood.TabStop = false;
-            this.btn_ShowFood.Click += new System.EventHandler(this.btn_ShowFood_Click);
-            // 
             // SideBar_FlowPanel
             // 
             this.SideBar_FlowPanel.AutoScroll = true;
@@ -178,16 +167,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
             // 
-            // btn_Menu
-            // 
-            this.btn_Menu.Image = global::QuanLiNhaHang.Properties.Resources.icons8_menu_50;
-            this.btn_Menu.Location = new System.Drawing.Point(20, 31);
-            this.btn_Menu.Name = "btn_Menu";
-            this.btn_Menu.Size = new System.Drawing.Size(41, 39);
-            this.btn_Menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Menu.TabIndex = 0;
-            this.btn_Menu.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
@@ -197,26 +176,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(248, 56);
             this.panel5.TabIndex = 4;
-            // 
-            // btn_Home
-            // 
-            this.btn_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Home.FillColor = System.Drawing.Color.Transparent;
-            this.btn_Home.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Home.ForeColor = System.Drawing.Color.White;
-            this.btn_Home.Image = global::QuanLiNhaHang.Properties.Resources.icons8_home_50;
-            this.btn_Home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Home.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Home.Location = new System.Drawing.Point(0, -8);
-            this.btn_Home.Name = "btn_Home";
-            this.btn_Home.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_Home.Size = new System.Drawing.Size(251, 66);
-            this.btn_Home.TabIndex = 5;
-            this.btn_Home.Text = "Home";
-            this.btn_Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // panel3
             // 
@@ -235,26 +194,6 @@
             this.panel2.Size = new System.Drawing.Size(248, 56);
             this.panel2.TabIndex = 5;
             // 
-            // btn_DatHang
-            // 
-            this.btn_DatHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DatHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DatHang.FillColor = System.Drawing.Color.Transparent;
-            this.btn_DatHang.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DatHang.ForeColor = System.Drawing.Color.White;
-            this.btn_DatHang.Image = global::QuanLiNhaHang.Properties.Resources.icons8_order_50;
-            this.btn_DatHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatHang.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_DatHang.Location = new System.Drawing.Point(-1, -5);
-            this.btn_DatHang.Name = "btn_DatHang";
-            this.btn_DatHang.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_DatHang.Size = new System.Drawing.Size(251, 66);
-            this.btn_DatHang.TabIndex = 6;
-            this.btn_DatHang.Text = "Đặt hàng";
-            this.btn_DatHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // panel8
             // 
             this.panel8.Location = new System.Drawing.Point(3, 275);
@@ -271,27 +210,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(248, 56);
             this.panel6.TabIndex = 7;
-            // 
-            // btn_DatMon
-            // 
-            this.btn_DatMon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatMon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatMon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DatMon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DatMon.FillColor = System.Drawing.Color.Transparent;
-            this.btn_DatMon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DatMon.ForeColor = System.Drawing.Color.White;
-            this.btn_DatMon.Image = global::QuanLiNhaHang.Properties.Resources.icons8_restaurant_50;
-            this.btn_DatMon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatMon.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_DatMon.Location = new System.Drawing.Point(0, -8);
-            this.btn_DatMon.Name = "btn_DatMon";
-            this.btn_DatMon.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
-            this.btn_DatMon.Size = new System.Drawing.Size(251, 66);
-            this.btn_DatMon.TabIndex = 5;
-            this.btn_DatMon.Text = "Đặt món";
-            this.btn_DatMon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatMon.Click += new System.EventHandler(this.btn_DatMon_Click);
             // 
             // panel10
             // 
@@ -310,26 +228,6 @@
             this.panel7.Size = new System.Drawing.Size(248, 56);
             this.panel7.TabIndex = 8;
             // 
-            // btn_ThucKhach
-            // 
-            this.btn_ThucKhach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThucKhach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThucKhach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ThucKhach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ThucKhach.FillColor = System.Drawing.Color.Transparent;
-            this.btn_ThucKhach.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btn_ThucKhach.ForeColor = System.Drawing.Color.White;
-            this.btn_ThucKhach.Image = global::QuanLiNhaHang.Properties.Resources.icons8_account_50;
-            this.btn_ThucKhach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_ThucKhach.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_ThucKhach.Location = new System.Drawing.Point(0, -8);
-            this.btn_ThucKhach.Name = "btn_ThucKhach";
-            this.btn_ThucKhach.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_ThucKhach.Size = new System.Drawing.Size(251, 66);
-            this.btn_ThucKhach.TabIndex = 5;
-            this.btn_ThucKhach.Text = "Thực khách";
-            this.btn_ThucKhach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // panel13
             // 
             this.panel13.Location = new System.Drawing.Point(3, 467);
@@ -346,27 +244,6 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(248, 56);
             this.panel14.TabIndex = 10;
-            // 
-            // btn_DatBan
-            // 
-            this.btn_DatBan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatBan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DatBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DatBan.FillColor = System.Drawing.Color.Transparent;
-            this.btn_DatBan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btn_DatBan.ForeColor = System.Drawing.Color.White;
-            this.btn_DatBan.Image = global::QuanLiNhaHang.Properties.Resources.icons8_table_64;
-            this.btn_DatBan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatBan.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_DatBan.Location = new System.Drawing.Point(0, -8);
-            this.btn_DatBan.Name = "btn_DatBan";
-            this.btn_DatBan.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_DatBan.Size = new System.Drawing.Size(251, 66);
-            this.btn_DatBan.TabIndex = 5;
-            this.btn_DatBan.Text = "Đặt bàn";
-            this.btn_DatBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatBan.Click += new System.EventHandler(this.btn_DatBan_Click);
             // 
             // Panel_Settings
             // 
@@ -400,62 +277,7 @@
             this.btn_Upload.Size = new System.Drawing.Size(100, 22);
             this.btn_Upload.TabIndex = 24;
             this.btn_Upload.Text = "Upload";
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.Location = new System.Drawing.Point(646, 13);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox.TabIndex = 23;
-            this.pictureBox.TabStop = false;
-            // 
-            // btn_Fix
-            // 
-            this.btn_Fix.BorderRadius = 15;
-            this.btn_Fix.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Fix.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Fix.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Fix.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Fix.FillColor = System.Drawing.Color.White;
-            this.btn_Fix.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Fix.ForeColor = System.Drawing.Color.White;
-            this.btn_Fix.Image = global::QuanLiNhaHang.Properties.Resources.icons8_fix_50;
-            this.btn_Fix.Location = new System.Drawing.Point(353, 73);
-            this.btn_Fix.Name = "btn_Fix";
-            this.btn_Fix.Size = new System.Drawing.Size(35, 35);
-            this.btn_Fix.TabIndex = 22;
-            // 
-            // btn_Delete
-            // 
-            this.btn_Delete.BorderRadius = 15;
-            this.btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Delete.FillColor = System.Drawing.Color.White;
-            this.btn_Delete.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.Image = global::QuanLiNhaHang.Properties.Resources.icons8_minus_24;
-            this.btn_Delete.Location = new System.Drawing.Point(290, 73);
-            this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(35, 35);
-            this.btn_Delete.TabIndex = 21;
-            // 
-            // btn_Add
-            // 
-            this.btn_Add.BorderRadius = 15;
-            this.btn_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Add.FillColor = System.Drawing.Color.White;
-            this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Add.ForeColor = System.Drawing.Color.White;
-            this.btn_Add.Image = global::QuanLiNhaHang.Properties.Resources.icons8_plus_24;
-            this.btn_Add.Location = new System.Drawing.Point(228, 73);
-            this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(35, 35);
-            this.btn_Add.TabIndex = 20;
+            this.btn_Upload.Click += new System.EventHandler(this.btn_Upload_Click_1);
             // 
             // label4
             // 
@@ -544,6 +366,188 @@
             this.txt_MaMon.Size = new System.Drawing.Size(185, 34);
             this.txt_MaMon.TabIndex = 16;
             // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(646, 13);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox.TabIndex = 23;
+            this.pictureBox.TabStop = false;
+            // 
+            // btn_Fix
+            // 
+            this.btn_Fix.BorderRadius = 15;
+            this.btn_Fix.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Fix.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Fix.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Fix.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Fix.FillColor = System.Drawing.Color.White;
+            this.btn_Fix.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Fix.ForeColor = System.Drawing.Color.White;
+            this.btn_Fix.Image = global::QuanLiNhaHang.Properties.Resources.icons8_fix_50;
+            this.btn_Fix.Location = new System.Drawing.Point(353, 73);
+            this.btn_Fix.Name = "btn_Fix";
+            this.btn_Fix.Size = new System.Drawing.Size(35, 35);
+            this.btn_Fix.TabIndex = 22;
+            this.btn_Fix.Click += new System.EventHandler(this.btn_Fix_Click_1);
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.BorderRadius = 15;
+            this.btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Delete.FillColor = System.Drawing.Color.White;
+            this.btn_Delete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Delete.ForeColor = System.Drawing.Color.White;
+            this.btn_Delete.Image = global::QuanLiNhaHang.Properties.Resources.icons8_minus_24;
+            this.btn_Delete.Location = new System.Drawing.Point(290, 73);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(35, 35);
+            this.btn_Delete.TabIndex = 21;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click_1);
+            // 
+            // btn_Add
+            // 
+            this.btn_Add.BorderRadius = 15;
+            this.btn_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Add.FillColor = System.Drawing.Color.White;
+            this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Add.ForeColor = System.Drawing.Color.White;
+            this.btn_Add.Image = global::QuanLiNhaHang.Properties.Resources.icons8_plus_24;
+            this.btn_Add.Location = new System.Drawing.Point(228, 73);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(35, 35);
+            this.btn_Add.TabIndex = 20;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click_1);
+            // 
+            // btn_Menu
+            // 
+            this.btn_Menu.Image = global::QuanLiNhaHang.Properties.Resources.icons8_menu_50;
+            this.btn_Menu.Location = new System.Drawing.Point(20, 31);
+            this.btn_Menu.Name = "btn_Menu";
+            this.btn_Menu.Size = new System.Drawing.Size(41, 39);
+            this.btn_Menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Menu.TabIndex = 0;
+            this.btn_Menu.TabStop = false;
+            // 
+            // btn_Home
+            // 
+            this.btn_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Home.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Home.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Home.ForeColor = System.Drawing.Color.White;
+            this.btn_Home.Image = global::QuanLiNhaHang.Properties.Resources.icons8_home_50;
+            this.btn_Home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Home.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Home.Location = new System.Drawing.Point(0, -8);
+            this.btn_Home.Name = "btn_Home";
+            this.btn_Home.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_Home.Size = new System.Drawing.Size(251, 66);
+            this.btn_Home.TabIndex = 5;
+            this.btn_Home.Text = "Home";
+            this.btn_Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btn_DatHang
+            // 
+            this.btn_DatHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DatHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DatHang.FillColor = System.Drawing.Color.Transparent;
+            this.btn_DatHang.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DatHang.ForeColor = System.Drawing.Color.White;
+            this.btn_DatHang.Image = global::QuanLiNhaHang.Properties.Resources.icons8_order_50;
+            this.btn_DatHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatHang.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_DatHang.Location = new System.Drawing.Point(-1, -5);
+            this.btn_DatHang.Name = "btn_DatHang";
+            this.btn_DatHang.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_DatHang.Size = new System.Drawing.Size(251, 66);
+            this.btn_DatHang.TabIndex = 6;
+            this.btn_DatHang.Text = "Đặt hàng";
+            this.btn_DatHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btn_DatMon
+            // 
+            this.btn_DatMon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatMon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatMon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DatMon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DatMon.FillColor = System.Drawing.Color.Transparent;
+            this.btn_DatMon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DatMon.ForeColor = System.Drawing.Color.White;
+            this.btn_DatMon.Image = global::QuanLiNhaHang.Properties.Resources.icons8_restaurant_50;
+            this.btn_DatMon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatMon.ImageSize = new System.Drawing.Size(35, 35);
+            this.btn_DatMon.Location = new System.Drawing.Point(0, -8);
+            this.btn_DatMon.Name = "btn_DatMon";
+            this.btn_DatMon.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
+            this.btn_DatMon.Size = new System.Drawing.Size(251, 66);
+            this.btn_DatMon.TabIndex = 5;
+            this.btn_DatMon.Text = "Đặt món";
+            this.btn_DatMon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatMon.Click += new System.EventHandler(this.btn_DatMon_Click);
+            // 
+            // btn_ThucKhach
+            // 
+            this.btn_ThucKhach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThucKhach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThucKhach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThucKhach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThucKhach.FillColor = System.Drawing.Color.Transparent;
+            this.btn_ThucKhach.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btn_ThucKhach.ForeColor = System.Drawing.Color.White;
+            this.btn_ThucKhach.Image = global::QuanLiNhaHang.Properties.Resources.icons8_account_50;
+            this.btn_ThucKhach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_ThucKhach.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_ThucKhach.Location = new System.Drawing.Point(0, -8);
+            this.btn_ThucKhach.Name = "btn_ThucKhach";
+            this.btn_ThucKhach.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_ThucKhach.Size = new System.Drawing.Size(251, 66);
+            this.btn_ThucKhach.TabIndex = 5;
+            this.btn_ThucKhach.Text = "Thực khách";
+            this.btn_ThucKhach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btn_DatBan
+            // 
+            this.btn_DatBan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatBan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DatBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DatBan.FillColor = System.Drawing.Color.Transparent;
+            this.btn_DatBan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btn_DatBan.ForeColor = System.Drawing.Color.White;
+            this.btn_DatBan.Image = global::QuanLiNhaHang.Properties.Resources.icons8_table_64;
+            this.btn_DatBan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatBan.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_DatBan.Location = new System.Drawing.Point(0, -8);
+            this.btn_DatBan.Name = "btn_DatBan";
+            this.btn_DatBan.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_DatBan.Size = new System.Drawing.Size(251, 66);
+            this.btn_DatBan.TabIndex = 5;
+            this.btn_DatBan.Text = "Đặt bàn";
+            this.btn_DatBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatBan.Click += new System.EventHandler(this.btn_DatBan_Click);
+            // 
+            // btn_ShowFood
+            // 
+            this.btn_ShowFood.Image = global::QuanLiNhaHang.Properties.Resources.icons8_cart_24;
+            this.btn_ShowFood.Location = new System.Drawing.Point(1153, 12);
+            this.btn_ShowFood.Name = "btn_ShowFood";
+            this.btn_ShowFood.Size = new System.Drawing.Size(34, 33);
+            this.btn_ShowFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_ShowFood.TabIndex = 3;
+            this.btn_ShowFood.TabStop = false;
+            this.btn_ShowFood.Click += new System.EventHandler(this.btn_ShowFood_Click);
+            // 
             // FFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -561,11 +565,9 @@
             this.Text = "FFood";
             this.Load += new System.EventHandler(this.FFood_Load);
             this.Panel_Food.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ShowFood)).EndInit();
             this.SideBar_FlowPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -574,6 +576,8 @@
             this.Panel_Settings.ResumeLayout(false);
             this.Panel_Settings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ShowFood)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

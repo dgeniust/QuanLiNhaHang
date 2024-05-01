@@ -103,5 +103,14 @@ namespace QuanLiNhaHang
         {
 
         }
+
+        private void btn_Pay_Click(object sender, EventArgs e)
+        {
+            string query = string.Format("Update donhang set ngaythanhtoan ='{0}', nvthutien ='{1}',tongtien='{3}' where madh = '{2}'", this.lbl_Date.Text,this.lbl_MaNV.Text,temp,this.lbl_Money.Text);
+            db.ThucThi(query);
+            Success sc = new Success();
+            this.Hide();
+            sc.Show();
+        }
     }
 }

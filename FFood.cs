@@ -26,11 +26,7 @@ namespace QuanLiNhaHang
         DatMonDAO dmD = new DatMonDAO();
         FoodDAO fD = new FoodDAO();
         string type = "";
-        public Guna2Button BTN_HOME => btn_Home;
-        public Guna2Button BTN_DATHANG => btn_DatHang;
         public Guna2Button BTN_DATMON => btn_DatMon;
-        public Guna2Button BTN_DATBAN => btn_DatBan;
-        public Guna2Button BTN_THUCKHACH => btn_ThucKhach;
         public FFood()
         {
             InitializeComponent();
@@ -82,15 +78,12 @@ namespace QuanLiNhaHang
             }
         }
         public string tempdh = "";
-        private void btn_Menu_Click(object sender, EventArgs e)
-        {
-            sidebarTimer.Start();
-        }
 
         private void btn_ShowFood_Click(object sender, EventArgs e)
         {
             FBill fb = new FBill(bt, tempdh);
             fb.ShowDialog();
+            this.Hide();
         }
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
@@ -114,43 +107,8 @@ namespace QuanLiNhaHang
             }
         }
 
-        private void btn_Add_Click(object sender, EventArgs e)
-        {
-            Food f = new Food(txt_MaMon.Text,txt_TenMon.Text,Convert.ToDouble(txt_Price.Text),"",pictureBox.ImageLocation);
-            fD.Add(f);
-            LoadForm();
-        }
-        private void btn_Delete_Click(object sender, EventArgs e)
-        {
-            Food f = new Food(txt_MaMon.Text, txt_TenMon.Text, Convert.ToDouble(txt_Price.Text), "", pictureBox.ImageLocation);
-            fD.Delete(f);
-            LoadForm();
-        }
-        private void btn_Fix_Click(object sender, EventArgs e)
-        {
-            Food f = new Food(txt_MaMon.Text, txt_TenMon.Text, Convert.ToDouble(txt_Price.Text), "", pictureBox.ImageLocation);
-            fD.Fix(f);
-            LoadForm();
-        }
+        
         string imageLocation = "";
-        private void btn_Upload_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(*.jpg)|*.jpg|PNG files(*.png)|*.png|All Files(*.*)|*.*";
-
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    imageLocation = dialog.FileName;
-                    pictureBox.ImageLocation = imageLocation;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void btn_DatBan_Click(object sender, EventArgs e)
         {
@@ -169,9 +127,46 @@ namespace QuanLiNhaHang
             ff.BTN_DATMON.BackColor = Color.White;
             ff.BTN_DATMON.ForeColor = Color.FromArgb(30, 40, 45);
         }
-
-        private void btn_NV_Click(object sender, EventArgs e)
+        private void btn_Fix_Click_1(object sender, EventArgs e)
         {
+            Food f = new Food(txt_MaMon.Text, txt_TenMon.Text, Convert.ToDouble(txt_Price.Text), "", pictureBox.ImageLocation);
+            fD.Fix(f);
+            LoadForm();
+        }
+
+        private void btn_Delete_Click_1(object sender, EventArgs e)
+        {
+            Food f = new Food(txt_MaMon.Text, txt_TenMon.Text, Convert.ToDouble(txt_Price.Text), "", pictureBox.ImageLocation);
+            fD.Delete(f);
+            LoadForm();
+
+        }
+
+        private void btn_Add_Click_1(object sender, EventArgs e)
+        {
+
+            Food f = new Food(txt_MaMon.Text, txt_TenMon.Text, Convert.ToDouble(txt_Price.Text), "", pictureBox.ImageLocation);
+            fD.Add(f);
+            LoadForm();
+        }
+
+        private void btn_Upload_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg|PNG files(*.png)|*.png|All Files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    pictureBox.ImageLocation = imageLocation;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

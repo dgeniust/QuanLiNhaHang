@@ -273,6 +273,16 @@ namespace QuanLiNhaHang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_success_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-success-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_table_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-table-64", resourceCulture);

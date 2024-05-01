@@ -102,5 +102,12 @@ namespace QuanLiNhaHang
             clv.Show();
             this.Hide();
         }
+
+        private void btn_DT_Click(object sender, EventArgs e)
+        {
+            DoanhThu dt = new DoanhThu();
+            dt.Show();
+            this.Hide();
+        }
     }
 }
