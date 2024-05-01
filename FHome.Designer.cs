@@ -45,6 +45,10 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.btn_Menu = new System.Windows.Forms.PictureBox();
             this.btn_Home = new Guna.UI2.WinForms.Guna2Button();
@@ -53,10 +57,6 @@
             this.btn_DatMon = new Guna.UI2.WinForms.Guna2Button();
             this.btn_ThucKhach = new Guna.UI2.WinForms.Guna2Button();
             this.btn_DatBan = new Guna.UI2.WinForms.Guna2Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.SideBar_FlowPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -219,6 +219,44 @@
             this.guna2HtmlLabel1.Text = "Welcome to Hell Kitchen";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "BoCuonLaLot.jpg");
+            this.imageList1.Images.SetKeyName(1, "BachTuocNuongMuoiOt.jpg");
+            this.imageList1.Images.SetKeyName(2, "BunBoHue.jpg");
+            this.imageList1.Images.SetKeyName(3, "BunChaHaNoi.jpg");
+            this.imageList1.Images.SetKeyName(4, "GoiBapBo.jpeg");
+            this.imageList1.Images.SetKeyName(5, "LauGaLaE.jpg");
+            this.imageList1.Images.SetKeyName(6, "PadThai.jpg");
+            this.imageList1.Images.SetKeyName(7, "PhoThinLoDuc.jpg");
+            this.imageList1.Images.SetKeyName(8, "SuonNuongNguVi.jpg");
+            this.imageList1.Images.SetKeyName(9, "SupNamTom.jpg");
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(642, 190);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(605, 162);
+            this.richTextBox1.TabIndex = 18;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.Location = new System.Drawing.Point(642, 371);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(605, 220);
+            this.richTextBox2.TabIndex = 18;
+            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            // 
             // pictureBox
             // 
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -258,6 +296,7 @@
             this.btn_Home.TabIndex = 5;
             this.btn_Home.Text = "Home";
             this.btn_Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
             // 
             // btn_DatHang
             // 
@@ -358,44 +397,6 @@
             this.btn_DatBan.TabIndex = 5;
             this.btn_DatBan.Text = "Đặt bàn";
             this.btn_DatBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "BoCuonLaLot.jpg");
-            this.imageList1.Images.SetKeyName(1, "BachTuocNuongMuoiOt.jpg");
-            this.imageList1.Images.SetKeyName(2, "BunBoHue.jpg");
-            this.imageList1.Images.SetKeyName(3, "BunChaHaNoi.jpg");
-            this.imageList1.Images.SetKeyName(4, "GoiBapBo.jpeg");
-            this.imageList1.Images.SetKeyName(5, "LauGaLaE.jpg");
-            this.imageList1.Images.SetKeyName(6, "PadThai.jpg");
-            this.imageList1.Images.SetKeyName(7, "PhoThinLoDuc.jpg");
-            this.imageList1.Images.SetKeyName(8, "SuonNuongNguVi.jpg");
-            this.imageList1.Images.SetKeyName(9, "SupNamTom.jpg");
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 2000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(642, 190);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(605, 162);
-            this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            // 
-            // richTextBox2
-            // 
-            this.richTextBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(642, 371);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(605, 220);
-            this.richTextBox2.TabIndex = 18;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
             // FHome
             // 

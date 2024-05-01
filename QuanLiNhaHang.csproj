@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaLamViec.cs" />
     <Compile Include="Class\BookTable.cs" />
     <Compile Include="Class\BookTableDAO.cs" />
     <Compile Include="Class\DatMon.cs" />

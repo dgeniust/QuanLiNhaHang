@@ -17,7 +17,7 @@ namespace QuanLiNhaHang
     public partial class FFood : Form
     {
         DBConnection db = new DBConnection();
-        BookTable bt;
+        public BookTable bt;
         Food food;
         UC_Food uc_f;
         public int slg;
@@ -72,7 +72,7 @@ namespace QuanLiNhaHang
                 bt.madh = dr[0].ToString();
             }
         }
-
+        
         public void GeneratePanel(string query, Panel storage_panel)
         {
             storage_panel.Controls.Clear();
@@ -89,18 +89,11 @@ namespace QuanLiNhaHang
                 this.food = FOOD;
                 UC_Food uC_Food = new UC_Food(FOOD, this);
                 this.uc_f = uC_Food;
-                uC_Food.BTN_ADDFOOD.Click += AddFood;
                 panel.Controls.Add(uC_Food);
                 storage_panel.Controls.Add(panel);
             }
         }
         public string tempdh = "";
-        public void AddFood(object sender, EventArgs e)
-        {
-            DatMon dm = new DatMon(bt.madh, bt.matk, mamon, Convert.ToInt32(uc_f.LBL_NUMBER.Text), "NOTE", bt.maban);
-            dmD.AddTable(dm);
-            tempdh = dm.madh;
-        }
         private void btn_Menu_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();

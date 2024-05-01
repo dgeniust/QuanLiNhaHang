@@ -32,5 +32,10 @@ namespace QuanLiNhaHang
                 count = 0;
             }
 }
+
+        private void btn_Home_Click(object sender, EventArgs e)
+        {
+            FHome fh = new FHome();
+        }
     }
 }

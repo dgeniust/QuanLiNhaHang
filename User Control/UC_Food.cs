@@ -18,6 +18,9 @@ namespace QuanLiNhaHang.User_Control
         Food food;
         FFood ff;
         FShip fs;
+        BookTable bt;
+        string mamon = "";
+        DatMonDAO dmD = new DatMonDAO();
         public Guna2Button BTN_PLUS => btn_Plus;
         public Guna2Button BTN_MINUS => btn_Minus;
         public Guna2Button BTN_ADDFOOD => btn_Add;
@@ -26,6 +29,7 @@ namespace QuanLiNhaHang.User_Control
         public UC_Food(Food FOOD,FFood FF)
         {
             InitializeComponent();
+            this.btn_Add.Click += AddFood;
             this.ff = FF;
             this.BTN_MINUS.Click += Minus;
             this.BTN_PLUS.Click += Plus;
@@ -34,6 +38,13 @@ namespace QuanLiNhaHang.User_Control
             this.lbl_Name.Text = FOOD.tenmon;
             this.lbl_Price.Text = FOOD.gia.ToString()+"đ";
             this.pictureBox.Image = LoadImageFromFile(FOOD.image);
+        }
+        public void AddFood(object sender, EventArgs e)
+        {
+            DatMon dm = new DatMon(ff.bt.madh, ff.bt.matk, lbl_Ma.Text, Convert.ToInt32(lbl_Number.Text), "NOTE", ff.bt.maban);
+            dmD.AddTable(dm);
+            ff.tempdh = dm.madh;
+            //MessageBox.Show(lbl_Number.Text);
         }
         public UC_Food(Food FOOD, FShip FS)
         {

@@ -63,12 +63,7 @@ namespace QuanLiNhaHang
 
         private void FShip_Load(object sender, EventArgs e)
         {
-            /*string query1 = "select MAX(madh) from donhang";
-            DataTable dt = db.LoadData(query1);
-            foreach (DataRow dr in dt.Rows)
-            {
-                dm.madh = dr[0].ToString();
-            }*/
+            
         }
     }
 }
