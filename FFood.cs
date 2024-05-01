@@ -1,4 +1,5 @@
-﻿using QuanLiNhaHang.Class;
+﻿using Guna.UI2.WinForms;
+using QuanLiNhaHang.Class;
 using QuanLiNhaHang.User_Control;
 using System;
 using System.Collections.Generic;
@@ -24,14 +25,34 @@ namespace QuanLiNhaHang
         public string madhtemp = "";
         DatMonDAO dmD = new DatMonDAO();
         FoodDAO fD = new FoodDAO();
+        string type = "";
+        public Guna2Button BTN_HOME => btn_Home;
+        public Guna2Button BTN_DATHANG => btn_DatHang;
+        public Guna2Button BTN_DATMON => btn_DatMon;
+        public Guna2Button BTN_DATBAN => btn_DatBan;
+        public Guna2Button BTN_THUCKHACH => btn_ThucKhach;
+        public Guna2Button BTN_NV => btn_NV;
         public FFood()
         {
             InitializeComponent();
         }
-        public FFood(BookTable BT)
+        public FFood(BookTable BT, string TYPE)
         {
             InitializeComponent();
             this.bt = BT;
+            this.type = TYPE;
+            if (TYPE == "Thuckhach")
+            {
+                this.Panel_Settings.Enabled = false;
+                btn_Home.Enabled = false;
+                btn_NV.Enabled = false; 
+            }
+            else
+            {
+                this.Panel_Settings.Enabled = true;
+                btn_Home.Enabled = true;
+                btn_NV.Enabled = true;
+            }
         }
         bool sidebar_timer;
         public Label LBL_NUMBEROGFOOD => lbl_NumberOfFood;
@@ -148,6 +169,33 @@ namespace QuanLiNhaHang
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btn_DatBan_Click(object sender, EventArgs e)
+        {
+            FBookTable fb = new FBookTable(bt.matk,type);
+            fb.Show();
+            this.Hide();
+            fb.BTN_DATBAN.BackColor = Color.White;
+            fb.BTN_DATBAN.ForeColor = Color.FromArgb(30, 40, 45);
+        }
+
+        private void btn_DatMon_Click(object sender, EventArgs e)
+        {
+            FFood ff = new FFood(bt,type);
+            ff.Show();
+            this.Hide();
+            ff.BTN_DATMON.BackColor = Color.White;
+            ff.BTN_DATMON.ForeColor = Color.FromArgb(30, 40, 45);
+        }
+
+        private void btn_NV_Click(object sender, EventArgs e)
+        {
+            FEmployee fe = new FEmployee();
+            fe.Show();
+            this.Hide();
+            fe.BTN_NV.BackColor = Color.White;
+            fe.BTN_NV.ForeColor = Color.FromArgb(30, 40, 45);
         }
     }
 }

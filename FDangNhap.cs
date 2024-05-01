@@ -57,21 +57,49 @@ namespace QuanLiNhaHang
             string type = "";
             SqlConnection conn = new SqlConnection(string.Format(@"Data Source=DAT\SQLEXPRESS;Initial Catalog=quanlynhahang;User ID={0};Password={1};Encrypt=False", tk, mk));
             //MessageBox.Show("SQL: "+ string.Format(@"Data Source=DAT\SQLEXPRESS;Initial Catalog=quanlynhahang;User ID={0};Password={1};Encrypt=False", tk, mk));
-            /*try
+            try
             {
                 conn.Open();
-                if(uC_Login1.CB_GUEST.Checked)
+                //Người đăng nhập là KHÁCH
+                string query = "SELECT dbo.getRole('"+tk+"')";
+                DataTable dt = new DataTable();
+                dt = db.LoadData(query);
+                foreach (DataRow dr in dt.Rows)
                 {
-                    type = uC_Login1.CB_GUEST.Text;
+                    type = dr[0].ToString();
                 }
-                string s = "Select * from Nhanvien where manv = '" + tk + "'";
-                DataTable dt = new DataTable(); 
+
+                if (uC_Login1.CB_GUEST.Checked || type == "Thuckhach")
+                {
+                    MessageBox.Show(type);
+                    FBookTable fB = new FBookTable(tk, type);
+                    fB.BTN_HOME.Enabled = false;
+                    fB.BTN_NV.Enabled = false;
+                    fB.Show();
+                    this.Hide();
+                }
+                if (uC_Login1.CB_EMPLOYEE.Checked || type == "Nhanvien")
+                {
+                    MessageBox.Show(type);
+                    FBookTable fB = new FBookTable();
+                    fB.Show();
+                    this.Hide();
+                }
+                if (uC_Login1.CB_MANAGE.Checked || type == "Quanli")
+                {
+                    MessageBox.Show(type);
+                    FBookTable fB = new FBookTable();
+                    fB.Show();
+                    this.Hide();
+                }
+                /*string s = "Select * from Nhanvien where manv = '" + tk + "'";
+                DataTable dt = new DataTable();
                 SqlDataAdapter adapter = new SqlDataAdapter(s, conn);
                 adapter.Fill(dt);
                 foreach (DataRow dr in dt.Rows)
                 {
                     MessageBox.Show(dr[0].ToString() + " " + dr[1].ToString());
-                }
+                }*/
             }
             catch (Exception ex)
             {
@@ -80,8 +108,8 @@ namespace QuanLiNhaHang
             finally
             {
                 conn.Close();
-            }*/
-            
+            }
+
         }
         public void ShowData(string type, string mathuchthe)
         {
@@ -91,31 +119,5 @@ namespace QuanLiNhaHang
         {
 
         }
-        /*string tk = Convert.ToString(Console.ReadLine());
-        string mk = Convert.ToString(Console.ReadLine());
-        string sqlstring = string.Format(@"Data Source=LAPTOP-GPLGAEAL\YORDLEYUU;Initial Catalog=quanlynhahang;User ID={0};Password={1};Encrypt=False", tk, mk);
-        SqlConnection conn = new SqlConnection(sqlstring);
-            try
-            {
-                conn.Open();
-                string s = string.Format("select * from Nhanvien");
-        DataTable dt = new DataTable();
-        SqlDataAdapter adapter = new SqlDataAdapter(s, conn);
-        adapter.Fill(dt);
-                foreach(DataRow dr in dt.Rows)
-                {
-                    Console.WriteLine(dr[0]);
-                }
-}
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            finally
-            {
-            conn.Close();
-}
-            Console.ReadLine();
-        }*/
     }
 }

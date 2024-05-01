@@ -12,7 +12,7 @@ namespace QuanLiNhaHang.Class
         DBConnection db = new DBConnection();
         public void AddTable(DatMon dm)
         {
-            string query = string.Format("INSERT INTO DatMon (MaDH, MaTK, MaMon, Slmon, GhiChu, MaBan) VALUES('{0}', '{1}', '{2}', {3}, '{4}','{5}')", dm.madh, dm.matk, dm.mamon,dm.slg,dm.ghichu, dm.maban);
+            string query = string.Format("exec Themdatmon '{0}', '{1}', '{2}', {3}, '{4}','{5}'", dm.madh, dm.matk, dm.mamon,dm.slg,dm.ghichu, dm.maban);
             db.ThucThi(query);
         }
     }
