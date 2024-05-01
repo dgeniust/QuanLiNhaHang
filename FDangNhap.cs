@@ -88,8 +88,8 @@ namespace QuanLiNhaHang
                 if (uC_Login1.CB_MANAGE.Checked || type == "Quanli")
                 {
                     MessageBox.Show(type);
-                    FBookTable fB = new FBookTable();
-                    fB.Show();
+                    FHome fh = new FHome();
+                    fh.Show();
                     this.Hide();
                 }
                 /*string s = "Select * from Nhanvien where manv = '" + tk + "'";

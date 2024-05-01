@@ -17,6 +17,7 @@ namespace QuanLiNhaHang.User_Control
     {
         Food food;
         FFood ff;
+        FShip fs;
         public Guna2Button BTN_PLUS => btn_Plus;
         public Guna2Button BTN_MINUS => btn_Minus;
         public Guna2Button BTN_ADDFOOD => btn_Add;
@@ -34,7 +35,22 @@ namespace QuanLiNhaHang.User_Control
             this.lbl_Price.Text = FOOD.gia.ToString()+"đ";
             this.pictureBox.Image = LoadImageFromFile(FOOD.image);
         }
-        public Image LoadImageFromFile(string filePath)
+        public UC_Food(Food FOOD, FShip FS)
+        {
+            InitializeComponent();
+            this.fs = FS;
+            this.food = FOOD;
+            this.Click += ShowInfo;
+            this.btn_Plus.Enabled = false;
+            this.btn_Minus.Enabled = false;
+            this.lbl_Number.Enabled = false;
+            this.lbl_Ma.Text = FOOD.mamon;
+            this.food = FOOD;
+            this.lbl_Name.Text = FOOD.tenmon;
+            this.lbl_Price.Text = FOOD.gia.ToString() + "đ";
+            this.pictureBox.Image = LoadImageFromFile(FOOD.image);
+        }
+            public Image LoadImageFromFile(string filePath)
         {
             try
             {
@@ -65,6 +81,10 @@ namespace QuanLiNhaHang.User_Control
             add += 1;
             ff.LBL_NUMBEROGFOOD.Text = add.ToString();
             ff.mamon = this.lbl_Ma.Text;
+        }
+        public void ShowInfo(object sender, EventArgs e)
+        {
+            fs.TXT_MAMON.Text = this.lbl_Ma.Text;
         }
     }
 }

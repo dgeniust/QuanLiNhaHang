@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -63,6 +62,9 @@
             this.btn_DatMon = new Guna.UI2.WinForms.Guna2Button();
             this.btn_ThucKhach = new Guna.UI2.WinForms.Guna2Button();
             this.btn_DatBan = new Guna.UI2.WinForms.Guna2Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.SideBar_FlowPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -72,6 +74,7 @@
             this.panel7.SuspendLayout();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).BeginInit();
+            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // SideBar_FlowPanel
@@ -126,13 +129,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(248, 56);
             this.panel5.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(3, 179);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 28);
-            this.panel3.TabIndex = 5;
             // 
             // panel2
             // 
@@ -399,6 +395,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Transparent;
+            this.panel12.Controls.Add(this.panel13);
             this.panel12.Controls.Add(this.btn_DatBan);
             this.panel12.ForeColor = System.Drawing.Color.White;
             this.panel12.Location = new System.Drawing.Point(3, 597);
@@ -540,6 +537,43 @@
             this.btn_DatBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_DatBan.Click += new System.EventHandler(this.btn_DatBan_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(3, 179);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(248, 28);
+            this.panel3.TabIndex = 5;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Transparent;
+            this.panel13.Controls.Add(this.guna2Button2);
+            this.panel13.ForeColor = System.Drawing.Color.White;
+            this.panel13.Location = new System.Drawing.Point(20, 49);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(248, 56);
+            this.panel13.TabIndex = 5;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Image = global::QuanLiNhaHang.Properties.Resources.icons8_home_50;
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button2.Location = new System.Drawing.Point(66, -10);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.guna2Button2.Size = new System.Drawing.Size(251, 66);
+            this.guna2Button2.TabIndex = 5;
+            this.guna2Button2.Text = "Home";
+            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // FBookTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -574,6 +608,7 @@
             this.panel7.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).EndInit();
+            this.panel13.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -586,7 +621,6 @@
         private System.Windows.Forms.PictureBox btn_Menu;
         private System.Windows.Forms.Panel panel5;
         private Guna.UI2.WinForms.Guna2Button btn_Home;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel4;
@@ -615,5 +649,8 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
         private Guna.UI2.WinForms.Guna2Button btn_DatBan;
+        private System.Windows.Forms.Panel panel13;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
