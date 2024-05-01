@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.uC_Register1 = new QuanLiNhaHang.User_Control.UC_Register();
+            this.uC_Login1 = new QuanLiNhaHang.User_Control.UC_Login();
             this.SuspendLayout();
+            // 
+            // uC_Register1
+            // 
+            this.uC_Register1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Register1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Register1.Name = "uC_Register1";
+            this.uC_Register1.Size = new System.Drawing.Size(708, 620);
+            this.uC_Register1.TabIndex = 1;
+            // 
+            // uC_Login1
+            // 
+            this.uC_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uC_Login1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Login1.Name = "uC_Login1";
+            this.uC_Login1.Size = new System.Drawing.Size(708, 620);
+            this.uC_Login1.TabIndex = 0;
+            this.uC_Login1.Visible = false;
             // 
             // FDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(708, 620);
+            this.Controls.Add(this.uC_Register1);
+            this.Controls.Add(this.uC_Login1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -44,5 +65,8 @@
         }
 
         #endregion
+
+        private User_Control.UC_Login uC_Login1;
+        private User_Control.UC_Register uC_Register1;
     }
 }

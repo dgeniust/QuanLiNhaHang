@@ -15,7 +15,7 @@ namespace QuanLiNhaHang.Class
         public string mota;
         public string image;
 
-        public Food(string mamon, string tenmon, float gia, string mota, string image)
+        public Food(string mamon, string tenmon, double gia, string mota, string image)
         {
             this.mamon = mamon;
             this.tenmon = tenmon;

@@ -299,11 +299,12 @@
             // 
             // pbox_btn_Exit
             // 
+            this.pbox_btn_Exit.Image = global::QuanLiNhaHang.Properties.Resources.icons8_exit_48_;
             this.pbox_btn_Exit.ImageRotate = 0F;
             this.pbox_btn_Exit.Location = new System.Drawing.Point(661, 17);
             this.pbox_btn_Exit.Name = "pbox_btn_Exit";
             this.pbox_btn_Exit.Size = new System.Drawing.Size(29, 29);
-            this.pbox_btn_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbox_btn_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbox_btn_Exit.TabIndex = 57;
             this.pbox_btn_Exit.TabStop = false;
             // 

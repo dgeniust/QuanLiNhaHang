@@ -43,7 +43,7 @@ namespace QuanLiNhaHang.User_Control
             this.food = FOOD;
             this.lbl_Name.Text = FOOD.tenmon;
             this.lbl_Price.Text = FOOD.gia.ToString() + "đ";
-            this.pictureBox.Image = LoadImageFromFile(FOOD.image);
+            //this.pictureBox.Image = LoadImageFromFile(FOOD.image);
         }
         public Image LoadImageFromFile(string filePath)
         {
@@ -51,10 +51,10 @@ namespace QuanLiNhaHang.User_Control
             {
                 return Image.FromFile(filePath);
             }
-            catch (FileNotFoundException)
+            catch (Exception ex)
             {
                 // Handle file not found exception (e.g., display error message)
-                MessageBox.Show("Error: Image file not found!");
+                MessageBox.Show("Lỗi: "+ex);
                 return null;
             }
         }

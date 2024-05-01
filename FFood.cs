@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,7 @@ namespace QuanLiNhaHang
         public string mamon;
         public string madhtemp = "";
         DatMonDAO dmD = new DatMonDAO();
+        FoodDAO fD = new FoodDAO();
         public FFood()
         {
             InitializeComponent();
@@ -34,18 +36,20 @@ namespace QuanLiNhaHang
         bool sidebar_timer;
         public Label LBL_NUMBEROGFOOD => lbl_NumberOfFood;
         
-
-        private void FFood_Load(object sender, EventArgs e)
+        public void LoadForm()
         {
             string query = "Select * from monan";
             GeneratePanel(query, Panel_Food);
+        }
+        private void FFood_Load(object sender, EventArgs e)
+        {
+            LoadForm();
             string query1 = "select MAX(madh) from donhang";
             DataTable dt = db.LoadData(query1);
-            foreach(DataRow dr in dt.Rows)
+            foreach (DataRow dr in dt.Rows)
             {
-               bt.madh = dr[0].ToString();
+                bt.madh = dr[0].ToString();
             }
-            madhtemp = bt.madh;
         }
 
         public void GeneratePanel(string query, Panel storage_panel)
@@ -105,6 +109,44 @@ namespace QuanLiNhaHang
                     sidebar_timer = true;
                     sidebarTimer.Stop();
                 }
+            }
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            Food f = new Food(txt_MaMon.Text,txt_TenMon.Text,Convert.ToDouble(txt_Price.Text),"",pictureBox.ImageLocation);
+            fD.Add(f);
+            LoadForm();
+        }
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            Food f = new Food(txt_MaMon.Text, txt_TenMon.Text, Convert.ToDouble(txt_Price.Text), "", pictureBox.ImageLocation);
+            fD.Delete(f);
+            LoadForm();
+        }
+        private void btn_Fix_Click(object sender, EventArgs e)
+        {
+            Food f = new Food(txt_MaMon.Text, txt_TenMon.Text, Convert.ToDouble(txt_Price.Text), "", pictureBox.ImageLocation);
+            fD.Fix(f);
+            LoadForm();
+        }
+        string imageLocation = "";
+        private void btn_Upload_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(*.jpg)|*.jpg|PNG files(*.png)|*.png|All Files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    pictureBox.ImageLocation = imageLocation;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -12,7 +12,10 @@ namespace QuanLiNhaHang.Class
     public class DBConnection
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.cnnStr);
-
+        public SqlConnection GetConnectionString()
+        {
+            return conn;
+        }
         public DataTable LoadData(string query)
         {
             string sqlStr = string.Format(query);

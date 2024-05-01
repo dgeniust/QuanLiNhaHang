@@ -53,6 +53,8 @@ namespace QuanLiNhaHang
         {
             BookTable bt = new BookTable("", txt_MaTK.Text, Convert.ToInt32(txt_Slg.Text), txt_MaBan.Text, dateTimePicker.Value.Date);
             btDAO.AddTable(bt);
+            string settable = "UPDATE BAN SET TrangThai ='UNAVAILABLE' WHERE MABAN ='"+txt_MaBan.Text +"'";
+            db.ThucThi(settable);
             FFood food = new FFood(bt);
             food.Show();
             this.Hide();

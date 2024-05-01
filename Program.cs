@@ -16,7 +16,7 @@ namespace QuanLiNhaHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FEmployee());
+            Application.Run(new FDangNhap());
         }
     }
 }

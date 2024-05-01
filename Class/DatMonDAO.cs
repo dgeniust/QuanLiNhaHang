@@ -14,7 +14,6 @@ namespace QuanLiNhaHang.Class
         {
             string query = string.Format("INSERT INTO DatMon (MaDH, MaTK, MaMon, Slmon, GhiChu, MaBan) VALUES('{0}', '{1}', '{2}', {3}, '{4}','{5}')", dm.madh, dm.matk, dm.mamon,dm.slg,dm.ghichu, dm.maban);
             db.ThucThi(query);
-            //MessageBox.Show(query);
         }
     }
 }

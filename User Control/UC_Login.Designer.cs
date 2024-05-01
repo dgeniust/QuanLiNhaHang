@@ -45,6 +45,9 @@
             this.pbox_btn_Exit = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cb_Guest = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.cb_Employee = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.cb_Manage = new Guna.UI2.WinForms.Guna2CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_btn_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,7 +104,7 @@
             this.txt_Username.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Username.ForeColor = System.Drawing.Color.Black;
             this.txt_Username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Username.Location = new System.Drawing.Point(206, 168);
+            this.txt_Username.Location = new System.Drawing.Point(206, 198);
             this.txt_Username.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Username.Name = "txt_Username";
             this.txt_Username.PasswordChar = '\0';
@@ -116,7 +119,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(73, 181);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(73, 207);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(118, 18);
             this.guna2HtmlLabel4.TabIndex = 41;
@@ -237,11 +240,12 @@
             // 
             // pbox_btn_Exit
             // 
+            this.pbox_btn_Exit.Image = global::QuanLiNhaHang.Properties.Resources.icons8_exit_48_;
             this.pbox_btn_Exit.ImageRotate = 0F;
             this.pbox_btn_Exit.Location = new System.Drawing.Point(658, 15);
             this.pbox_btn_Exit.Name = "pbox_btn_Exit";
             this.pbox_btn_Exit.Size = new System.Drawing.Size(29, 29);
-            this.pbox_btn_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbox_btn_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbox_btn_Exit.TabIndex = 56;
             this.pbox_btn_Exit.TabStop = false;
             // 
@@ -258,17 +262,80 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(597, 172);
+            this.pictureBox1.Location = new System.Drawing.Point(597, 202);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 27);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
+            // cb_Guest
+            // 
+            this.cb_Guest.AutoSize = true;
+            this.cb_Guest.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Guest.CheckedState.BorderRadius = 0;
+            this.cb_Guest.CheckedState.BorderThickness = 0;
+            this.cb_Guest.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
+            this.cb_Guest.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
+            this.cb_Guest.ForeColor = System.Drawing.Color.Black;
+            this.cb_Guest.Location = new System.Drawing.Point(128, 143);
+            this.cb_Guest.Name = "cb_Guest";
+            this.cb_Guest.Size = new System.Drawing.Size(97, 21);
+            this.cb_Guest.TabIndex = 70;
+            this.cb_Guest.Text = "ThucKhach";
+            this.cb_Guest.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Guest.UncheckedState.BorderRadius = 0;
+            this.cb_Guest.UncheckedState.BorderThickness = 0;
+            this.cb_Guest.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cb_Guest.CheckedChanged += new System.EventHandler(this.cb_Guest_CheckedChanged);
+            // 
+            // cb_Employee
+            // 
+            this.cb_Employee.AutoSize = true;
+            this.cb_Employee.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Employee.CheckedState.BorderRadius = 0;
+            this.cb_Employee.CheckedState.BorderThickness = 0;
+            this.cb_Employee.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
+            this.cb_Employee.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Employee.ForeColor = System.Drawing.Color.Black;
+            this.cb_Employee.Location = new System.Drawing.Point(311, 143);
+            this.cb_Employee.Name = "cb_Employee";
+            this.cb_Employee.Size = new System.Drawing.Size(91, 21);
+            this.cb_Employee.TabIndex = 71;
+            this.cb_Employee.Text = "NhanVien";
+            this.cb_Employee.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Employee.UncheckedState.BorderRadius = 0;
+            this.cb_Employee.UncheckedState.BorderThickness = 0;
+            this.cb_Employee.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cb_Employee.CheckedChanged += new System.EventHandler(this.cb_Employee_CheckedChanged);
+            // 
+            // cb_Manage
+            // 
+            this.cb_Manage.AutoSize = true;
+            this.cb_Manage.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Manage.CheckedState.BorderRadius = 0;
+            this.cb_Manage.CheckedState.BorderThickness = 0;
+            this.cb_Manage.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
+            this.cb_Manage.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Manage.ForeColor = System.Drawing.Color.Black;
+            this.cb_Manage.Location = new System.Drawing.Point(492, 143);
+            this.cb_Manage.Name = "cb_Manage";
+            this.cb_Manage.Size = new System.Drawing.Size(74, 21);
+            this.cb_Manage.TabIndex = 71;
+            this.cb_Manage.Text = "QuanLi";
+            this.cb_Manage.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Manage.UncheckedState.BorderRadius = 0;
+            this.cb_Manage.UncheckedState.BorderThickness = 0;
+            this.cb_Manage.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cb_Manage.CheckedChanged += new System.EventHandler(this.cb_Manage_CheckedChanged);
+            // 
             // UC_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cb_Manage);
+            this.Controls.Add(this.cb_Employee);
+            this.Controls.Add(this.cb_Guest);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.guna2HtmlLabel3);
@@ -312,5 +379,8 @@
         private Guna.UI2.WinForms.Guna2CheckBox cb_Login;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private Guna.UI2.WinForms.Guna2Button btn_Login;
+        private Guna.UI2.WinForms.Guna2CheckBox cb_Manage;
+        private Guna.UI2.WinForms.Guna2CheckBox cb_Employee;
+        private Guna.UI2.WinForms.Guna2CheckBox cb_Guest;
     }
 }
