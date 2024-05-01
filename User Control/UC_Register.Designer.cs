@@ -35,9 +35,9 @@
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cb_Register = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.txt_Password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_sdt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txt_Gmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Ten = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -144,26 +144,26 @@
             this.cb_Register.UncheckedState.BorderThickness = 1;
             this.cb_Register.UncheckedState.FillColor = System.Drawing.Color.White;
             // 
-            // txt_Password
+            // txt_sdt
             // 
-            this.txt_Password.BorderRadius = 7;
-            this.txt_Password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Password.DefaultText = "";
-            this.txt_Password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Password.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Password.Location = new System.Drawing.Point(200, 348);
-            this.txt_Password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_Password.Name = "txt_Password";
-            this.txt_Password.PasswordChar = '*';
-            this.txt_Password.PlaceholderText = "Please enter your phone number";
-            this.txt_Password.SelectedText = "";
-            this.txt_Password.Size = new System.Drawing.Size(432, 37);
-            this.txt_Password.TabIndex = 25;
+            this.txt_sdt.BorderRadius = 7;
+            this.txt_sdt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_sdt.DefaultText = "";
+            this.txt_sdt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_sdt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_sdt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_sdt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_sdt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_sdt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_sdt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_sdt.Location = new System.Drawing.Point(200, 348);
+            this.txt_sdt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_sdt.Name = "txt_sdt";
+            this.txt_sdt.PasswordChar = '*';
+            this.txt_sdt.PlaceholderText = "Please enter your phone number";
+            this.txt_sdt.SelectedText = "";
+            this.txt_sdt.Size = new System.Drawing.Size(432, 37);
+            this.txt_sdt.TabIndex = 25;
             // 
             // guna2HtmlLabel5
             // 
@@ -177,26 +177,26 @@
             this.guna2HtmlLabel5.TabIndex = 23;
             this.guna2HtmlLabel5.Text = "Số điện thoại";
             // 
-            // txt_Gmail
+            // txt_Ten
             // 
-            this.txt_Gmail.BorderRadius = 7;
-            this.txt_Gmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Gmail.DefaultText = "";
-            this.txt_Gmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_Gmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_Gmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Gmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_Gmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Gmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Gmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Gmail.Location = new System.Drawing.Point(200, 285);
-            this.txt_Gmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_Gmail.Name = "txt_Gmail";
-            this.txt_Gmail.PasswordChar = '\0';
-            this.txt_Gmail.PlaceholderText = "Please enter your name";
-            this.txt_Gmail.SelectedText = "";
-            this.txt_Gmail.Size = new System.Drawing.Size(432, 37);
-            this.txt_Gmail.TabIndex = 24;
+            this.txt_Ten.BorderRadius = 7;
+            this.txt_Ten.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Ten.DefaultText = "";
+            this.txt_Ten.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Ten.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Ten.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Ten.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Ten.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Ten.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Ten.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Ten.Location = new System.Drawing.Point(200, 285);
+            this.txt_Ten.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Ten.Name = "txt_Ten";
+            this.txt_Ten.PasswordChar = '\0';
+            this.txt_Ten.PlaceholderText = "Please enter your name";
+            this.txt_Ten.SelectedText = "";
+            this.txt_Ten.Size = new System.Drawing.Size(432, 37);
+            this.txt_Ten.TabIndex = 24;
             // 
             // guna2HtmlLabel4
             // 
@@ -352,11 +352,11 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txt_Password);
+            this.Controls.Add(this.txt_sdt);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.txt_Username);
             this.Controls.Add(this.guna2HtmlLabel7);
-            this.Controls.Add(this.txt_Gmail);
+            this.Controls.Add(this.txt_Ten);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2Separator2);
             this.Controls.Add(this.guna2Separator1);
@@ -384,9 +384,9 @@
         private Guna.UI2.WinForms.Guna2CheckBox cb_Register;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Password;
+        private Guna.UI2.WinForms.Guna2TextBox txt_sdt;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2TextBox txt_Gmail;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Ten;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;

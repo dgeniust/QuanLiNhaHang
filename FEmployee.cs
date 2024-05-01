@@ -19,38 +19,11 @@ namespace QuanLiNhaHang
         DBConnection db = new DBConnection();
         bool sidebar_timer;
         EmployeeDAO empDAO = new EmployeeDAO();
-        public Guna2Button BTN_HOME => btn_Home;
-        public Guna2Button BTN_DATHANG => btn_DatHang;
-        public Guna2Button BTN_DATMON => btn_DatMon;
-        public Guna2Button BTN_DATBAN => btn_DatBan;
-        public Guna2Button BTN_THUCKHACH => btn_ThucKhach;
-        public Guna2Button BTN_NV => btn_NV;
         public FEmployee()
         {
             InitializeComponent();
         }
 
-        private void sidebarTimer_Tick(object sender, EventArgs e)
-        {
-            if (sidebar_timer)
-            {
-                SideBar_FlowPanel.Width -= 30;
-                if (SideBar_FlowPanel.Width == SideBar_FlowPanel.MinimumSize.Width)
-                {
-                    sidebar_timer = false;
-                    sidebarTimer.Stop();
-                }
-            }
-            else
-            {
-                SideBar_FlowPanel.Width += 30;
-                if (SideBar_FlowPanel.Width == SideBar_FlowPanel.MaximumSize.Width)
-                {
-                    sidebar_timer = true;
-                    sidebarTimer.Stop();
-                }
-            }
-        }
         public void GeneratePanel(string query, Panel storage_panel)
         {
             storage_panel.Controls.Clear();
@@ -71,10 +44,6 @@ namespace QuanLiNhaHang
             }
         }
 
-        private void btn_Menu_Click(object sender, EventArgs e)
-        {
-            sidebarTimer.Start();
-        }
         public void LoadForm()
         {
             string query = "SELECT * FROM udf_ThongTinNhanVien('%%')";
@@ -113,38 +82,5 @@ namespace QuanLiNhaHang
             LoadForm();
         }
 
-        private void btn_NV_Click(object sender, EventArgs e)
-        {
-            FEmployee fe = new FEmployee();
-            fe.Show();
-            this.Hide();
-            fe.BTN_NV.BackColor = Color.White;
-            fe.BTN_NV.ForeColor = Color.FromArgb(30, 40, 45);
-        }
-
-        private void btn_DatMon_Click(object sender, EventArgs e)
-        {
-            FFood ff = new FFood();
-            ff.Show();
-            this.Hide();
-            ff.BTN_DATMON.BackColor = Color.White;
-            ff.BTN_DATMON.ForeColor = Color.FromArgb(30, 40, 45);
-        }
-
-        private void btn_DatBan_Click(object sender, EventArgs e)
-        {
-            FBookTable fb = new FBookTable();
-            fb.Show();
-            this.Hide();
-            fb.BTN_DATBAN.BackColor = Color.White;
-            fb.BTN_DATBAN.ForeColor = Color.FromArgb(30, 40, 45);
-        }
-
-        private void btn_Home_Click(object sender, EventArgs e)
-        {
-            FHome fh = new FHome();
-            fh.Show();
-            this.Hide();
-        }
     }
 }

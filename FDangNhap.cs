@@ -20,14 +20,16 @@ namespace QuanLiNhaHang
             InitializeComponent();
             uC_Login1.LINK_REG.Click += ShowRegister;
             uC_Register1.LINK_LOG.Click += ShowLogin;
+            uC_Register1.BTN_EXITR.Click += ExitRegister;
+            uC_Register1.BTN_REGISTER.Click += Register;
+            uC_Login1.BTN_EXIT.Click += ExitLogin;
+            uC_Login1.BTN_LOGIN.Click += Login;
         }
         public void ShowRegister(object sender, EventArgs e)
         {
             uC_Register1.Visible = true;
             uC_Login1.Visible = false;
             uC_Register1.BringToFront();
-            uC_Register1.BTN_EXITR.Click += ExitRegister;
-            uC_Register1.BTN_REGISTER.Click += Register;
         }
 
         private void ExitRegister(object sender, EventArgs e)
@@ -40,8 +42,6 @@ namespace QuanLiNhaHang
             uC_Login1.Visible = true;
             uC_Register1.Visible = false;
             uC_Login1.BringToFront();
-            uC_Login1.BTN_EXIT.Click += ExitLogin;
-            uC_Login1.BTN_LOGIN.Click += Login;
         }
 
         public void ExitLogin(object sender, EventArgs e)
@@ -73,8 +73,6 @@ namespace QuanLiNhaHang
                 {
                     MessageBox.Show(type);
                     FBookTable fB = new FBookTable(tk, type);
-                    fB.BTN_HOME.Enabled = false;
-                    fB.BTN_NV.Enabled = false;
                     fB.Show();
                     this.Hide();
                 }
@@ -117,7 +115,14 @@ namespace QuanLiNhaHang
         }
         public void Register(object sender, EventArgs e)
         {
-
+            string query = string.Format("exec AddThuckhach '{0}','{1}','{2}'", uC_Register1.TXT_USER.Text, uC_Register1.TXT_NAME.Text, uC_Register1.TXT_SDT.Text);
+            db.ThucThi(query);
+            if (MessageBox.Show("Đăng kí thành công! Bạn có muốn đăng nhập không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                uC_Register1.Visible = false;
+                uC_Login1.Visible = true;
+                uC_Login1.BringToFront();
+            }
         }
     }
 }

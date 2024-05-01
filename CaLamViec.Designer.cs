@@ -184,7 +184,7 @@
             this.btn_Delete.Size = new System.Drawing.Size(133, 36);
             this.btn_Delete.TabIndex = 6;
             this.btn_Delete.Text = "Xóa";
-            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click_1);
             // 
             // CaLamViec
             // 

@@ -36,6 +36,8 @@ namespace QuanLiNhaHang
         private void btn_Home_Click(object sender, EventArgs e)
         {
             FHome fh = new FHome();
+            fh.Show();
+            this.Hide();
         }
     }
 }

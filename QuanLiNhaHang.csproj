@@ -101,6 +101,12 @@
     <Compile Include="FFood.Designer.cs">
       <DependentUpon>FFood.cs</DependentUpon>
     </Compile>
+    <Compile Include="FGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGuest.Designer.cs">
+      <DependentUpon>FGuest.cs</DependentUpon>
+    </Compile>
     <Compile Include="FHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FFood.resx">
       <DependentUpon>FFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGuest.resx">
+      <DependentUpon>FGuest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FHome.resx">
       <DependentUpon>FHome.cs</DependentUpon>

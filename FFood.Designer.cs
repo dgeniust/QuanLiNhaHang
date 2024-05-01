@@ -46,9 +46,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_DatHang = new Guna.UI2.WinForms.Guna2Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_NV = new Guna.UI2.WinForms.Guna2Button();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_DatMon = new Guna.UI2.WinForms.Guna2Button();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -76,7 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -150,8 +146,6 @@
             this.SideBar_FlowPanel.Controls.Add(this.panel3);
             this.SideBar_FlowPanel.Controls.Add(this.panel2);
             this.SideBar_FlowPanel.Controls.Add(this.panel8);
-            this.SideBar_FlowPanel.Controls.Add(this.panel4);
-            this.SideBar_FlowPanel.Controls.Add(this.panel9);
             this.SideBar_FlowPanel.Controls.Add(this.panel6);
             this.SideBar_FlowPanel.Controls.Add(this.panel10);
             this.SideBar_FlowPanel.Controls.Add(this.panel7);
@@ -268,50 +262,12 @@
             this.panel8.Size = new System.Drawing.Size(248, 28);
             this.panel8.TabIndex = 6;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.btn_NV);
-            this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(3, 309);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(248, 56);
-            this.panel4.TabIndex = 6;
-            // 
-            // btn_NV
-            // 
-            this.btn_NV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_NV.FillColor = System.Drawing.Color.Transparent;
-            this.btn_NV.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NV.ForeColor = System.Drawing.Color.White;
-            this.btn_NV.Image = global::QuanLiNhaHang.Properties.Resources.icons8_employee_50;
-            this.btn_NV.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_NV.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_NV.Location = new System.Drawing.Point(0, -8);
-            this.btn_NV.Name = "btn_NV";
-            this.btn_NV.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_NV.Size = new System.Drawing.Size(251, 66);
-            this.btn_NV.TabIndex = 5;
-            this.btn_NV.Text = "Nhân viên";
-            this.btn_NV.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_NV.Click += new System.EventHandler(this.btn_NV_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(3, 371);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(248, 28);
-            this.panel9.TabIndex = 7;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.Controls.Add(this.btn_DatMon);
             this.panel6.ForeColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(3, 405);
+            this.panel6.Location = new System.Drawing.Point(3, 309);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(248, 56);
             this.panel6.TabIndex = 7;
@@ -339,7 +295,7 @@
             // 
             // panel10
             // 
-            this.panel10.Location = new System.Drawing.Point(3, 467);
+            this.panel10.Location = new System.Drawing.Point(3, 371);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(248, 28);
             this.panel10.TabIndex = 8;
@@ -349,7 +305,7 @@
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.Controls.Add(this.btn_ThucKhach);
             this.panel7.ForeColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(3, 501);
+            this.panel7.Location = new System.Drawing.Point(3, 405);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(248, 56);
             this.panel7.TabIndex = 8;
@@ -376,7 +332,7 @@
             // 
             // panel13
             // 
-            this.panel13.Location = new System.Drawing.Point(3, 563);
+            this.panel13.Location = new System.Drawing.Point(3, 467);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(248, 28);
             this.panel13.TabIndex = 9;
@@ -386,7 +342,7 @@
             this.panel14.BackColor = System.Drawing.Color.Transparent;
             this.panel14.Controls.Add(this.btn_DatBan);
             this.panel14.ForeColor = System.Drawing.Color.White;
-            this.panel14.Location = new System.Drawing.Point(3, 597);
+            this.panel14.Location = new System.Drawing.Point(3, 501);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(248, 56);
             this.panel14.TabIndex = 10;
@@ -612,7 +568,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
@@ -642,9 +597,6 @@
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btn_DatHang;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2Button btn_NV;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel6;
         private Guna.UI2.WinForms.Guna2Button btn_DatMon;
         private System.Windows.Forms.Panel panel10;

@@ -23,7 +23,6 @@ namespace QuanLiNhaHang
         public Guna2Button BTN_DATMON => btn_DatMon;
         public Guna2Button BTN_DATBAN => btn_DatBan;
         public Guna2Button BTN_THUCKHACH => btn_ThucKhach;
-        public Guna2Button BTN_NV => btn_NV;
         string ma = "";
         string type = "";
         public FBookTable()
@@ -38,17 +37,6 @@ namespace QuanLiNhaHang
             this.ma = MA;
             this.type = TYPE;
             this.txt_MaTK.Text = MA;
-            if(type == "Thuckhach")
-            {
-                btn_Home.Enabled = false;
-                btn_NV.Enabled = false;
-            }
-            else
-            {
-
-                btn_Home.Enabled = true;
-                btn_NV.Enabled = true;
-            }
         }
         public void LoadForm()
         {
@@ -124,11 +112,6 @@ namespace QuanLiNhaHang
 
         private void btn_NV_Click(object sender, EventArgs e)
         {
-            FEmployee fe = new FEmployee();
-            fe.Show();
-            this.Hide();
-            fe.BTN_NV.BackColor = Color.White;
-            fe.BTN_NV.ForeColor = Color.FromArgb(30, 40, 45);
         }
     }
 }

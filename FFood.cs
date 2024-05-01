@@ -31,7 +31,6 @@ namespace QuanLiNhaHang
         public Guna2Button BTN_DATMON => btn_DatMon;
         public Guna2Button BTN_DATBAN => btn_DatBan;
         public Guna2Button BTN_THUCKHACH => btn_ThucKhach;
-        public Guna2Button BTN_NV => btn_NV;
         public FFood()
         {
             InitializeComponent();
@@ -41,18 +40,7 @@ namespace QuanLiNhaHang
             InitializeComponent();
             this.bt = BT;
             this.type = TYPE;
-            if (TYPE == "Thuckhach")
-            {
-                this.Panel_Settings.Enabled = false;
-                btn_Home.Enabled = false;
-                btn_NV.Enabled = false; 
-            }
-            else
-            {
-                this.Panel_Settings.Enabled = true;
-                btn_Home.Enabled = true;
-                btn_NV.Enabled = true;
-            }
+            
         }
         bool sidebar_timer;
         public Label LBL_NUMBEROGFOOD => lbl_NumberOfFood;
@@ -184,11 +172,6 @@ namespace QuanLiNhaHang
 
         private void btn_NV_Click(object sender, EventArgs e)
         {
-            FEmployee fe = new FEmployee();
-            fe.Show();
-            this.Hide();
-            fe.BTN_NV.BackColor = Color.White;
-            fe.BTN_NV.ForeColor = Color.FromArgb(30, 40, 45);
         }
     }
 }

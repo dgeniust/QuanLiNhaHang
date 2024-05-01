@@ -23,7 +23,6 @@ namespace QuanLiNhaHang
         public Guna2Button BTN_DATMON => btn_DatMon;
         public Guna2Button BTN_DATBAN => btn_DatBan;
         public Guna2Button BTN_THUCKHACH => btn_ThucKhach;
-        public Guna2Button BTN_NV => btn_NV;
         public FBill(BookTable BT, string madhtemp)
         {
             InitializeComponent();
@@ -40,6 +39,25 @@ namespace QuanLiNhaHang
         {
             string query = "select * from GetHoaDonDetails('%"+ temp + "%')";
             GeneratePanel(query, Panel_Bill);
+            this.lbl_Mahd.Text = temp;
+            this.lbl_Date.Text = DateTime.Now.ToString();
+            this.lbl_MaNV.Text = "NV04";
+            this.lbl_tenNV.Text = "Trần Công Toản";
+            string getname = "Select * from thuckhach where matk='" + bt.matk + "'";
+            DataTable dt = new DataTable();
+            dt = db.LoadData(getname);
+            foreach (DataRow dr in dt.Rows)
+            {
+                this.lbl_Khach.Text = dr[1].ToString();
+                this.lbl_phone.Text = dr[2].ToString();
+            }
+            string getmoney = "SELECT * FROM GetHoaDonTongTien('%"+temp+"%')";
+            DataTable money = new DataTable();
+            money = db.LoadData(getmoney);
+            foreach (DataRow dr in money.Rows)
+            {
+                this.lbl_Money.Text = dr[1].ToString();
+            }
         }
         public void GeneratePanel(string query, Panel storage_panel)
         {
@@ -83,11 +101,7 @@ namespace QuanLiNhaHang
 
         private void btn_NV_Click(object sender, EventArgs e)
         {
-            FEmployee fe = new FEmployee();
-            fe.Show();
-            this.Hide();
-            fe.BTN_NV.BackColor = Color.White;
-            fe.BTN_NV.ForeColor = Color.FromArgb(30, 40, 45);
+
         }
     }
 }

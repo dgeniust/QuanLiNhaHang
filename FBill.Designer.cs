@@ -43,43 +43,39 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lbl_phone = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbl_Khach = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btn_Pay = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Xuat = new Guna.UI2.WinForms.Guna2Button();
-            this.SideBar_FlowPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_Menu = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_Home = new Guna.UI2.WinForms.Guna2Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_DatHang = new Guna.UI2.WinForms.Guna2Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btn_NV = new Guna.UI2.WinForms.Guna2Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btn_DatMon = new Guna.UI2.WinForms.Guna2Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.btn_ThucKhach = new Guna.UI2.WinForms.Guna2Button();
-            this.panel13 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.btn_DatBan = new Guna.UI2.WinForms.Guna2Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btn_ThucKhach = new Guna.UI2.WinForms.Guna2Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_DatMon = new Guna.UI2.WinForms.Guna2Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_DatHang = new Guna.UI2.WinForms.Guna2Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_Home = new Guna.UI2.WinForms.Guna2Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_Menu = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SideBar_FlowPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.lbl_Money = new System.Windows.Forms.Label();
             this.Panel_Bill.SuspendLayout();
-            this.SideBar_FlowPanel.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).BeginInit();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel14.SuspendLayout();
+            this.SideBar_FlowPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_Bill
@@ -227,15 +223,15 @@
             this.lbl_phone.TabIndex = 6;
             this.lbl_phone.Text = "0387731823";
             // 
-            // label9
+            // lbl_Khach
             // 
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(968, 330);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(244, 23);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Nguyễn Văn A";
+            this.lbl_Khach.BackColor = System.Drawing.SystemColors.Control;
+            this.lbl_Khach.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Khach.Location = new System.Drawing.Point(968, 330);
+            this.lbl_Khach.Name = "lbl_Khach";
+            this.lbl_Khach.Size = new System.Drawing.Size(244, 23);
+            this.lbl_Khach.TabIndex = 6;
+            this.lbl_Khach.Text = "Nguyễn Văn A";
             // 
             // label10
             // 
@@ -245,17 +241,6 @@
             this.label10.Size = new System.Drawing.Size(144, 38);
             this.label10.TabIndex = 3;
             this.label10.Text = "Tổng bill: ";
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.SystemColors.Control;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1010, 452);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(244, 38);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "0387731823";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -296,95 +281,118 @@
             this.btn_Xuat.TabIndex = 7;
             this.btn_Xuat.Text = "Xuất hóa đơn";
             // 
-            // SideBar_FlowPanel
+            // panel14
             // 
-            this.SideBar_FlowPanel.AutoScroll = true;
-            this.SideBar_FlowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.SideBar_FlowPanel.Controls.Add(this.panel2);
-            this.SideBar_FlowPanel.Controls.Add(this.panel5);
-            this.SideBar_FlowPanel.Controls.Add(this.panel3);
-            this.SideBar_FlowPanel.Controls.Add(this.panel4);
-            this.SideBar_FlowPanel.Controls.Add(this.panel8);
-            this.SideBar_FlowPanel.Controls.Add(this.panel6);
-            this.SideBar_FlowPanel.Controls.Add(this.panel9);
-            this.SideBar_FlowPanel.Controls.Add(this.panel7);
-            this.SideBar_FlowPanel.Controls.Add(this.panel10);
-            this.SideBar_FlowPanel.Controls.Add(this.panel11);
-            this.SideBar_FlowPanel.Controls.Add(this.panel13);
-            this.SideBar_FlowPanel.Controls.Add(this.panel14);
-            this.SideBar_FlowPanel.Location = new System.Drawing.Point(0, 0);
-            this.SideBar_FlowPanel.MaximumSize = new System.Drawing.Size(251, 681);
-            this.SideBar_FlowPanel.MinimumSize = new System.Drawing.Size(80, 681);
-            this.SideBar_FlowPanel.Name = "SideBar_FlowPanel";
-            this.SideBar_FlowPanel.Size = new System.Drawing.Size(251, 681);
-            this.SideBar_FlowPanel.TabIndex = 15;
+            this.panel14.BackColor = System.Drawing.Color.Transparent;
+            this.panel14.Controls.Add(this.btn_DatBan);
+            this.panel14.ForeColor = System.Drawing.Color.White;
+            this.panel14.Location = new System.Drawing.Point(3, 501);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(248, 56);
+            this.panel14.TabIndex = 10;
             // 
-            // panel2
+            // btn_DatBan
             // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btn_Menu);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(248, 108);
-            this.panel2.TabIndex = 0;
+            this.btn_DatBan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatBan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DatBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DatBan.FillColor = System.Drawing.Color.Transparent;
+            this.btn_DatBan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btn_DatBan.ForeColor = System.Drawing.Color.White;
+            this.btn_DatBan.Image = global::QuanLiNhaHang.Properties.Resources.icons8_table_64;
+            this.btn_DatBan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatBan.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_DatBan.Location = new System.Drawing.Point(0, -8);
+            this.btn_DatBan.Name = "btn_DatBan";
+            this.btn_DatBan.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_DatBan.Size = new System.Drawing.Size(251, 66);
+            this.btn_DatBan.TabIndex = 5;
+            this.btn_DatBan.Text = "Đặt bàn";
+            this.btn_DatBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatBan.Click += new System.EventHandler(this.btn_DatBan_Click);
             // 
-            // label1
+            // panel13
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(108, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Menu";
+            this.panel13.Location = new System.Drawing.Point(3, 467);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(248, 28);
+            this.panel13.TabIndex = 9;
             // 
-            // btn_Menu
+            // panel11
             // 
-            this.btn_Menu.Image = global::QuanLiNhaHang.Properties.Resources.icons8_menu_50;
-            this.btn_Menu.Location = new System.Drawing.Point(20, 31);
-            this.btn_Menu.Name = "btn_Menu";
-            this.btn_Menu.Size = new System.Drawing.Size(41, 39);
-            this.btn_Menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Menu.TabIndex = 0;
-            this.btn_Menu.TabStop = false;
+            this.panel11.BackColor = System.Drawing.Color.Transparent;
+            this.panel11.Controls.Add(this.btn_ThucKhach);
+            this.panel11.ForeColor = System.Drawing.Color.White;
+            this.panel11.Location = new System.Drawing.Point(3, 405);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(248, 56);
+            this.panel11.TabIndex = 8;
             // 
-            // panel5
+            // btn_ThucKhach
             // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.Controls.Add(this.btn_Home);
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(3, 117);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(248, 56);
-            this.panel5.TabIndex = 4;
+            this.btn_ThucKhach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThucKhach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_ThucKhach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_ThucKhach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_ThucKhach.FillColor = System.Drawing.Color.Transparent;
+            this.btn_ThucKhach.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btn_ThucKhach.ForeColor = System.Drawing.Color.White;
+            this.btn_ThucKhach.Image = global::QuanLiNhaHang.Properties.Resources.icons8_account_50;
+            this.btn_ThucKhach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_ThucKhach.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_ThucKhach.Location = new System.Drawing.Point(0, -8);
+            this.btn_ThucKhach.Name = "btn_ThucKhach";
+            this.btn_ThucKhach.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_ThucKhach.Size = new System.Drawing.Size(251, 66);
+            this.btn_ThucKhach.TabIndex = 5;
+            this.btn_ThucKhach.Text = "Thực khách";
+            this.btn_ThucKhach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // btn_Home
+            // panel10
             // 
-            this.btn_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Home.FillColor = System.Drawing.Color.Transparent;
-            this.btn_Home.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Home.ForeColor = System.Drawing.Color.White;
-            this.btn_Home.Image = global::QuanLiNhaHang.Properties.Resources.icons8_home_50;
-            this.btn_Home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Home.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Home.Location = new System.Drawing.Point(0, -8);
-            this.btn_Home.Name = "btn_Home";
-            this.btn_Home.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_Home.Size = new System.Drawing.Size(251, 66);
-            this.btn_Home.TabIndex = 5;
-            this.btn_Home.Text = "Home";
-            this.btn_Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.panel10.Location = new System.Drawing.Point(3, 371);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(248, 28);
+            this.panel10.TabIndex = 8;
             // 
-            // panel3
+            // panel7
             // 
-            this.panel3.Location = new System.Drawing.Point(3, 179);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 28);
-            this.panel3.TabIndex = 5;
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.Controls.Add(this.btn_DatMon);
+            this.panel7.ForeColor = System.Drawing.Color.White;
+            this.panel7.Location = new System.Drawing.Point(3, 309);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(248, 56);
+            this.panel7.TabIndex = 7;
+            // 
+            // btn_DatMon
+            // 
+            this.btn_DatMon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatMon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DatMon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DatMon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DatMon.FillColor = System.Drawing.Color.Transparent;
+            this.btn_DatMon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DatMon.ForeColor = System.Drawing.Color.White;
+            this.btn_DatMon.Image = global::QuanLiNhaHang.Properties.Resources.icons8_restaurant_50;
+            this.btn_DatMon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatMon.ImageSize = new System.Drawing.Size(35, 35);
+            this.btn_DatMon.Location = new System.Drawing.Point(0, -8);
+            this.btn_DatMon.Name = "btn_DatMon";
+            this.btn_DatMon.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
+            this.btn_DatMon.Size = new System.Drawing.Size(251, 66);
+            this.btn_DatMon.TabIndex = 5;
+            this.btn_DatMon.Text = "Đặt món";
+            this.btn_DatMon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_DatMon.Click += new System.EventHandler(this.btn_DatMon_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.Location = new System.Drawing.Point(3, 275);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(248, 28);
+            this.panel9.TabIndex = 7;
             // 
             // panel4
             // 
@@ -416,156 +424,104 @@
             this.btn_DatHang.Text = "Đặt hàng";
             this.btn_DatHang.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // panel8
+            // panel3
             // 
-            this.panel8.Location = new System.Drawing.Point(3, 275);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(248, 28);
-            this.panel8.TabIndex = 6;
+            this.panel3.Location = new System.Drawing.Point(3, 179);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(248, 28);
+            this.panel3.TabIndex = 5;
             // 
-            // panel6
+            // panel5
             // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.Controls.Add(this.btn_NV);
-            this.panel6.ForeColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(3, 309);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(248, 56);
-            this.panel6.TabIndex = 6;
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.Controls.Add(this.btn_Home);
+            this.panel5.ForeColor = System.Drawing.Color.White;
+            this.panel5.Location = new System.Drawing.Point(3, 117);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(248, 56);
+            this.panel5.TabIndex = 4;
             // 
-            // btn_NV
+            // btn_Home
             // 
-            this.btn_NV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_NV.FillColor = System.Drawing.Color.Transparent;
-            this.btn_NV.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NV.ForeColor = System.Drawing.Color.White;
-            this.btn_NV.Image = global::QuanLiNhaHang.Properties.Resources.icons8_employee_50;
-            this.btn_NV.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_NV.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_NV.Location = new System.Drawing.Point(0, -8);
-            this.btn_NV.Name = "btn_NV";
-            this.btn_NV.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_NV.Size = new System.Drawing.Size(251, 66);
-            this.btn_NV.TabIndex = 5;
-            this.btn_NV.Text = "Nhân viên";
-            this.btn_NV.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_NV.Click += new System.EventHandler(this.btn_NV_Click);
+            this.btn_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Home.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Home.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Home.ForeColor = System.Drawing.Color.White;
+            this.btn_Home.Image = global::QuanLiNhaHang.Properties.Resources.icons8_home_50;
+            this.btn_Home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Home.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Home.Location = new System.Drawing.Point(0, -8);
+            this.btn_Home.Name = "btn_Home";
+            this.btn_Home.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btn_Home.Size = new System.Drawing.Size(251, 66);
+            this.btn_Home.TabIndex = 5;
+            this.btn_Home.Text = "Home";
+            this.btn_Home.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // panel9
+            // panel2
             // 
-            this.panel9.Location = new System.Drawing.Point(3, 371);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(248, 28);
-            this.panel9.TabIndex = 7;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.btn_Menu);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(248, 108);
+            this.panel2.TabIndex = 0;
             // 
-            // panel7
+            // btn_Menu
             // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.Controls.Add(this.btn_DatMon);
-            this.panel7.ForeColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(3, 405);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(248, 56);
-            this.panel7.TabIndex = 7;
+            this.btn_Menu.Image = global::QuanLiNhaHang.Properties.Resources.icons8_menu_50;
+            this.btn_Menu.Location = new System.Drawing.Point(20, 31);
+            this.btn_Menu.Name = "btn_Menu";
+            this.btn_Menu.Size = new System.Drawing.Size(41, 39);
+            this.btn_Menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Menu.TabIndex = 0;
+            this.btn_Menu.TabStop = false;
             // 
-            // btn_DatMon
+            // label1
             // 
-            this.btn_DatMon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatMon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatMon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DatMon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DatMon.FillColor = System.Drawing.Color.Transparent;
-            this.btn_DatMon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DatMon.ForeColor = System.Drawing.Color.White;
-            this.btn_DatMon.Image = global::QuanLiNhaHang.Properties.Resources.icons8_restaurant_50;
-            this.btn_DatMon.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatMon.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_DatMon.Location = new System.Drawing.Point(0, -8);
-            this.btn_DatMon.Name = "btn_DatMon";
-            this.btn_DatMon.Padding = new System.Windows.Forms.Padding(33, 0, 0, 0);
-            this.btn_DatMon.Size = new System.Drawing.Size(251, 66);
-            this.btn_DatMon.TabIndex = 5;
-            this.btn_DatMon.Text = "Đặt món";
-            this.btn_DatMon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatMon.Click += new System.EventHandler(this.btn_DatMon_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(108, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Menu";
             // 
-            // panel10
+            // SideBar_FlowPanel
             // 
-            this.panel10.Location = new System.Drawing.Point(3, 467);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(248, 28);
-            this.panel10.TabIndex = 8;
+            this.SideBar_FlowPanel.AutoScroll = true;
+            this.SideBar_FlowPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.SideBar_FlowPanel.Controls.Add(this.panel2);
+            this.SideBar_FlowPanel.Controls.Add(this.panel5);
+            this.SideBar_FlowPanel.Controls.Add(this.panel3);
+            this.SideBar_FlowPanel.Controls.Add(this.panel4);
+            this.SideBar_FlowPanel.Controls.Add(this.panel9);
+            this.SideBar_FlowPanel.Controls.Add(this.panel7);
+            this.SideBar_FlowPanel.Controls.Add(this.panel10);
+            this.SideBar_FlowPanel.Controls.Add(this.panel11);
+            this.SideBar_FlowPanel.Controls.Add(this.panel13);
+            this.SideBar_FlowPanel.Controls.Add(this.panel14);
+            this.SideBar_FlowPanel.Location = new System.Drawing.Point(0, 0);
+            this.SideBar_FlowPanel.MaximumSize = new System.Drawing.Size(251, 681);
+            this.SideBar_FlowPanel.MinimumSize = new System.Drawing.Size(80, 681);
+            this.SideBar_FlowPanel.Name = "SideBar_FlowPanel";
+            this.SideBar_FlowPanel.Size = new System.Drawing.Size(251, 681);
+            this.SideBar_FlowPanel.TabIndex = 15;
             // 
-            // panel11
+            // lbl_Money
             // 
-            this.panel11.BackColor = System.Drawing.Color.Transparent;
-            this.panel11.Controls.Add(this.btn_ThucKhach);
-            this.panel11.ForeColor = System.Drawing.Color.White;
-            this.panel11.Location = new System.Drawing.Point(3, 501);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(248, 56);
-            this.panel11.TabIndex = 8;
-            // 
-            // btn_ThucKhach
-            // 
-            this.btn_ThucKhach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThucKhach.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_ThucKhach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_ThucKhach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_ThucKhach.FillColor = System.Drawing.Color.Transparent;
-            this.btn_ThucKhach.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btn_ThucKhach.ForeColor = System.Drawing.Color.White;
-            this.btn_ThucKhach.Image = global::QuanLiNhaHang.Properties.Resources.icons8_account_50;
-            this.btn_ThucKhach.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_ThucKhach.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_ThucKhach.Location = new System.Drawing.Point(0, -8);
-            this.btn_ThucKhach.Name = "btn_ThucKhach";
-            this.btn_ThucKhach.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_ThucKhach.Size = new System.Drawing.Size(251, 66);
-            this.btn_ThucKhach.TabIndex = 5;
-            this.btn_ThucKhach.Text = "Thực khách";
-            this.btn_ThucKhach.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(3, 563);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(248, 28);
-            this.panel13.TabIndex = 9;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.Transparent;
-            this.panel14.Controls.Add(this.btn_DatBan);
-            this.panel14.ForeColor = System.Drawing.Color.White;
-            this.panel14.Location = new System.Drawing.Point(3, 597);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(248, 56);
-            this.panel14.TabIndex = 10;
-            // 
-            // btn_DatBan
-            // 
-            this.btn_DatBan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatBan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DatBan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DatBan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DatBan.FillColor = System.Drawing.Color.Transparent;
-            this.btn_DatBan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
-            this.btn_DatBan.ForeColor = System.Drawing.Color.White;
-            this.btn_DatBan.Image = global::QuanLiNhaHang.Properties.Resources.icons8_table_64;
-            this.btn_DatBan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatBan.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_DatBan.Location = new System.Drawing.Point(0, -8);
-            this.btn_DatBan.Name = "btn_DatBan";
-            this.btn_DatBan.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btn_DatBan.Size = new System.Drawing.Size(251, 66);
-            this.btn_DatBan.TabIndex = 5;
-            this.btn_DatBan.Text = "Đặt bàn";
-            this.btn_DatBan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_DatBan.Click += new System.EventHandler(this.btn_DatBan_Click);
+            this.lbl_Money.BackColor = System.Drawing.SystemColors.Control;
+            this.lbl_Money.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Money.Location = new System.Drawing.Point(1010, 452);
+            this.lbl_Money.Name = "lbl_Money";
+            this.lbl_Money.Size = new System.Drawing.Size(244, 38);
+            this.lbl_Money.TabIndex = 6;
+            this.lbl_Money.Text = "0387731823";
+            this.lbl_Money.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FBill
             // 
@@ -575,8 +531,8 @@
             this.Controls.Add(this.SideBar_FlowPanel);
             this.Controls.Add(this.btn_Xuat);
             this.Controls.Add(this.btn_Pay);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lbl_Khach);
+            this.Controls.Add(this.lbl_Money);
             this.Controls.Add(this.lbl_phone);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2TextBox1);
@@ -598,16 +554,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FBill";
             this.Panel_Bill.ResumeLayout(false);
-            this.SideBar_FlowPanel.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Menu)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
+            this.SideBar_FlowPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -628,32 +583,29 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbl_phone;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl_Khach;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2Button btn_Pay;
         private Guna.UI2.WinForms.Guna2Button btn_Xuat;
-        private System.Windows.Forms.FlowLayoutPanel SideBar_FlowPanel;
+        private System.Windows.Forms.Panel panel14;
+        private Guna.UI2.WinForms.Guna2Button btn_DatBan;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel11;
+        private Guna.UI2.WinForms.Guna2Button btn_ThucKhach;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel7;
+        private Guna.UI2.WinForms.Guna2Button btn_DatMon;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel4;
+        private Guna.UI2.WinForms.Guna2Button btn_DatHang;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private Guna.UI2.WinForms.Guna2Button btn_Home;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btn_Menu;
-        private System.Windows.Forms.Panel panel5;
-        private Guna.UI2.WinForms.Guna2Button btn_Home;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2Button btn_DatHang;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel6;
-        private Guna.UI2.WinForms.Guna2Button btn_NV;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel7;
-        private Guna.UI2.WinForms.Guna2Button btn_DatMon;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private Guna.UI2.WinForms.Guna2Button btn_ThucKhach;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel14;
-        private Guna.UI2.WinForms.Guna2Button btn_DatBan;
+        private System.Windows.Forms.FlowLayoutPanel SideBar_FlowPanel;
+        private System.Windows.Forms.Label lbl_Money;
     }
 }
