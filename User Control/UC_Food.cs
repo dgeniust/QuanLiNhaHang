@@ -18,7 +18,7 @@ namespace QuanLiNhaHang.User_Control
         Food food;
         FFood ff;
         FShip fs;
-        BookTable bt;
+        //BookTable bt;
         string mamon = "";
         DatMonDAO dmD = new DatMonDAO();
         public Guna2Button BTN_PLUS => btn_Plus;

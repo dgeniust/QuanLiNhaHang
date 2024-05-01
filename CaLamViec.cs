@@ -18,17 +18,34 @@ namespace QuanLiNhaHang
         {
             InitializeComponent();
         }
-
-        private void CaLamViec_Load(object sender, EventArgs e)
+        public void LoadCLV()
         {
             string query = "select * from V_CaLamViec";
             dgv_CLV.DataSource = db.LoadData(query);
         }
+        private void CaLamViec_Load(object sender, EventArgs e)
+        {
+            LoadCLV();
+        }
 
         private void btn_Search_Click(object sender, EventArgs e)
         {
-            string query = "select * from udf_CaLamViec('%%','nv01')";
+            string query = "select * from udf_CaLamViec('%%',N'%"+txt_Search.Text+"%')";
             dgv_CLV.DataSource = db.LoadData(query);
+        }
+
+        private void btn_Fix_Click(object sender, EventArgs e)
+        {
+            string query = string.Format("exec p_Suacalamviec '{0}', '{1}'",txt_manv.Text, txt_maclv.Text);
+            db.ThucThi(query);
+            LoadCLV() ;
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            string query = string.Format("exec p_Xoacalamviec '{0}', '{1}'", txt_manv.Text, txt_maclv.Text);
+            db.ThucThi(query);
+            LoadCLV();
         }
     }
 }
