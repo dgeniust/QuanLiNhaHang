@@ -32,7 +32,13 @@
             this.txt_Search = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgv_Guest = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Guest = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Emp = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Work = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Guest)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Search
@@ -90,11 +96,86 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Hỗ trợ khách hàng";
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2Button4);
+            this.guna2Panel1.Controls.Add(this.btn_Work);
+            this.guna2Panel1.Controls.Add(this.btn_Emp);
+            this.guna2Panel1.Controls.Add(this.btn_Guest);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1283, 37);
+            this.guna2Panel1.TabIndex = 11;
+            // 
+            // btn_Guest
+            // 
+            this.btn_Guest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Guest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Guest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Guest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Guest.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btn_Guest.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Guest.ForeColor = System.Drawing.Color.White;
+            this.btn_Guest.Location = new System.Drawing.Point(72, 0);
+            this.btn_Guest.Name = "btn_Guest";
+            this.btn_Guest.Size = new System.Drawing.Size(180, 37);
+            this.btn_Guest.TabIndex = 0;
+            this.btn_Guest.Text = "Khách hàng";
+            this.btn_Guest.Click += new System.EventHandler(this.btn_Guest_Click);
+            // 
+            // btn_Emp
+            // 
+            this.btn_Emp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Emp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Emp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Emp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Emp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btn_Emp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Emp.ForeColor = System.Drawing.Color.White;
+            this.btn_Emp.Location = new System.Drawing.Point(385, 0);
+            this.btn_Emp.Name = "btn_Emp";
+            this.btn_Emp.Size = new System.Drawing.Size(180, 37);
+            this.btn_Emp.TabIndex = 0;
+            this.btn_Emp.Text = "Nhân viên";
+            this.btn_Emp.Click += new System.EventHandler(this.btn_Emp_Click);
+            // 
+            // btn_Work
+            // 
+            this.btn_Work.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Work.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Work.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Work.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Work.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btn_Work.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Work.ForeColor = System.Drawing.Color.White;
+            this.btn_Work.Location = new System.Drawing.Point(711, 0);
+            this.btn_Work.Name = "btn_Work";
+            this.btn_Work.Size = new System.Drawing.Size(180, 37);
+            this.btn_Work.TabIndex = 0;
+            this.btn_Work.Text = "Ca làm";
+            this.btn_Work.Click += new System.EventHandler(this.btn_Work_Click);
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.Location = new System.Drawing.Point(1021, 0);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(180, 37);
+            this.guna2Button4.TabIndex = 0;
+            this.guna2Button4.Text = ".....";
+            // 
             // FGuest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 680);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btn_Search);
             this.Controls.Add(this.txt_Search);
             this.Controls.Add(this.dgv_Guest);
@@ -105,6 +186,7 @@
             this.Text = "FGuest";
             this.Load += new System.EventHandler(this.FGuest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Guest)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -114,5 +196,10 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_Search;
         private System.Windows.Forms.DataGridView dgv_Guest;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btn_Work;
+        private Guna.UI2.WinForms.Guna2Button btn_Emp;
+        private Guna.UI2.WinForms.Guna2Button btn_Guest;
     }
 }

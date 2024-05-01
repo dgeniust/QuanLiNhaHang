@@ -86,7 +86,7 @@ namespace QuanLiNhaHang
                 if (uC_Login1.CB_MANAGE.Checked || type == "Quanli")
                 {
                     MessageBox.Show(type);
-                    FHome fh = new FHome();
+                    CaLamViec fh = new CaLamViec();
                     fh.Show();
                     this.Hide();
                 }

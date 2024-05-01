@@ -47,5 +47,26 @@ namespace QuanLiNhaHang
             db.ThucThi(query);
             LoadCLV();
         }
+
+        private void btn_Guest_Click(object sender, EventArgs e)
+        {
+            FGuest fg = new FGuest();
+            this.Hide();
+            fg.Show();
+        }
+
+        private void btn_Emp_Click(object sender, EventArgs e)
+        {
+            FEmployee fe = new FEmployee();
+            fe.Show();
+            this.Hide();
+        }
+
+        private void btn_Work_Click(object sender, EventArgs e)
+        {
+            CaLamViec clv = new CaLamViec();
+            clv.Show();
+            this.Hide();
+        }
     }
 }
