@@ -52,5 +52,12 @@ namespace QuanLiNhaHang
             dt.Show();
             this.Hide();
         }
+
+        private void btn_Food_Click(object sender, EventArgs e)
+        {
+            MonAn ma = new MonAn();
+            ma.Show();
+            this.Hide();
+        }
     }
 }

@@ -11,6 +11,7 @@ namespace QuanLiNhaHang.Class
 {
     public class DBConnection
     {
+        //FDangNhap fd;
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.cnnStr);
         public SqlConnection GetConnectionString()
         {

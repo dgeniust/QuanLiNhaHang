@@ -48,31 +48,38 @@ namespace QuanLiNhaHang
             LoadCLV();
         }
 
-        private void btn_Guest_Click(object sender, EventArgs e)
+        private void btn_Food_Click(object sender, EventArgs e)
         {
-            FGuest fg = new FGuest();
+            MonAn ma = new MonAn();
             this.Hide();
-            fg.Show();
+            ma.Show();
         }
 
-        private void btn_Emp_Click(object sender, EventArgs e)
+        private void btn_Emp_Click_1(object sender, EventArgs e)
         {
             FEmployee fe = new FEmployee();
             fe.Show();
             this.Hide();
         }
 
-        private void btn_Work_Click(object sender, EventArgs e)
+        private void btn_Guest_Click_1(object sender, EventArgs e)
         {
-            CaLamViec clv = new CaLamViec();
-            clv.Show();
+            FGuest fg = new FGuest();
             this.Hide();
+            fg.Show();
         }
 
-        private void btn_DT_Click(object sender, EventArgs e)
+        private void btn_DT_Click_1(object sender, EventArgs e)
         {
             DoanhThu dt = new DoanhThu();
             dt.Show();
+            this.Hide();
+        }
+
+        private void btn_Work_Click_1(object sender, EventArgs e)
+        {
+            CaLamViec clv = new CaLamViec();
+            clv.Show();
             this.Hide();
         }
     }

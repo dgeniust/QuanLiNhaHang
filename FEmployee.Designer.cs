@@ -46,12 +46,13 @@
             this.txt_MaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_SDT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_Food = new Guna.UI2.WinForms.Guna2Button();
             this.btn_DT = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Work = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Emp = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Guest = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
             this.Panel_NV.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -289,81 +290,6 @@
             this.txt_SDT.Size = new System.Drawing.Size(259, 32);
             this.txt_SDT.TabIndex = 5;
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.btn_DT);
-            this.guna2Panel1.Controls.Add(this.btn_Work);
-            this.guna2Panel1.Controls.Add(this.btn_Emp);
-            this.guna2Panel1.Controls.Add(this.btn_Guest);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1283, 37);
-            this.guna2Panel1.TabIndex = 12;
-            // 
-            // btn_DT
-            // 
-            this.btn_DT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_DT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_DT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_DT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btn_DT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_DT.ForeColor = System.Drawing.Color.White;
-            this.btn_DT.Location = new System.Drawing.Point(1021, 0);
-            this.btn_DT.Name = "btn_DT";
-            this.btn_DT.Size = new System.Drawing.Size(180, 37);
-            this.btn_DT.TabIndex = 0;
-            this.btn_DT.Text = "Doanh thu";
-            this.btn_DT.Click += new System.EventHandler(this.btn_DT_Click);
-            // 
-            // btn_Work
-            // 
-            this.btn_Work.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Work.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Work.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Work.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Work.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btn_Work.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Work.ForeColor = System.Drawing.Color.White;
-            this.btn_Work.Location = new System.Drawing.Point(711, 0);
-            this.btn_Work.Name = "btn_Work";
-            this.btn_Work.Size = new System.Drawing.Size(180, 37);
-            this.btn_Work.TabIndex = 0;
-            this.btn_Work.Text = "Ca làm";
-            this.btn_Work.Click += new System.EventHandler(this.btn_Work_Click);
-            // 
-            // btn_Emp
-            // 
-            this.btn_Emp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Emp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Emp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Emp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Emp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btn_Emp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Emp.ForeColor = System.Drawing.Color.White;
-            this.btn_Emp.Location = new System.Drawing.Point(385, 0);
-            this.btn_Emp.Name = "btn_Emp";
-            this.btn_Emp.Size = new System.Drawing.Size(180, 37);
-            this.btn_Emp.TabIndex = 0;
-            this.btn_Emp.Text = "Nhân viên";
-            this.btn_Emp.Click += new System.EventHandler(this.btn_Emp_Click);
-            // 
-            // btn_Guest
-            // 
-            this.btn_Guest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Guest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Guest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Guest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Guest.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
-            this.btn_Guest.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Guest.ForeColor = System.Drawing.Color.White;
-            this.btn_Guest.Location = new System.Drawing.Point(72, 0);
-            this.btn_Guest.Name = "btn_Guest";
-            this.btn_Guest.Size = new System.Drawing.Size(180, 37);
-            this.btn_Guest.TabIndex = 0;
-            this.btn_Guest.Text = "Khách hàng";
-            this.btn_Guest.Click += new System.EventHandler(this.btn_Guest_Click);
-            // 
             // btn_Search
             // 
             this.btn_Search.BorderRadius = 10;
@@ -382,6 +308,98 @@
             this.btn_Search.TabIndex = 2;
             this.btn_Search.Text = "Tìm kiếm";
             this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.btn_Food);
+            this.guna2Panel1.Controls.Add(this.btn_DT);
+            this.guna2Panel1.Controls.Add(this.btn_Work);
+            this.guna2Panel1.Controls.Add(this.btn_Emp);
+            this.guna2Panel1.Controls.Add(this.btn_Guest);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1283, 37);
+            this.guna2Panel1.TabIndex = 24;
+            // 
+            // btn_Food
+            // 
+            this.btn_Food.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Food.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Food.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Food.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Food.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btn_Food.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Food.ForeColor = System.Drawing.Color.White;
+            this.btn_Food.Location = new System.Drawing.Point(1069, 0);
+            this.btn_Food.Name = "btn_Food";
+            this.btn_Food.Size = new System.Drawing.Size(180, 37);
+            this.btn_Food.TabIndex = 24;
+            this.btn_Food.Text = "Món ăn";
+            this.btn_Food.Click += new System.EventHandler(this.btn_Food_Click);
+            // 
+            // btn_DT
+            // 
+            this.btn_DT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_DT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_DT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_DT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btn_DT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_DT.ForeColor = System.Drawing.Color.White;
+            this.btn_DT.Location = new System.Drawing.Point(803, 0);
+            this.btn_DT.Name = "btn_DT";
+            this.btn_DT.Size = new System.Drawing.Size(180, 37);
+            this.btn_DT.TabIndex = 1;
+            this.btn_DT.Text = "Doanh thu";
+            this.btn_DT.Click += new System.EventHandler(this.btn_DT_Click_1);
+            // 
+            // btn_Work
+            // 
+            this.btn_Work.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Work.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Work.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Work.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Work.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btn_Work.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Work.ForeColor = System.Drawing.Color.White;
+            this.btn_Work.Location = new System.Drawing.Point(543, 0);
+            this.btn_Work.Name = "btn_Work";
+            this.btn_Work.Size = new System.Drawing.Size(180, 37);
+            this.btn_Work.TabIndex = 0;
+            this.btn_Work.Text = "Ca làm";
+            this.btn_Work.Click += new System.EventHandler(this.btn_Work_Click_1);
+            // 
+            // btn_Emp
+            // 
+            this.btn_Emp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Emp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Emp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Emp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Emp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btn_Emp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Emp.ForeColor = System.Drawing.Color.White;
+            this.btn_Emp.Location = new System.Drawing.Point(278, 0);
+            this.btn_Emp.Name = "btn_Emp";
+            this.btn_Emp.Size = new System.Drawing.Size(180, 37);
+            this.btn_Emp.TabIndex = 0;
+            this.btn_Emp.Text = "Nhân viên";
+            this.btn_Emp.Click += new System.EventHandler(this.btn_Emp_Click_1);
+            // 
+            // btn_Guest
+            // 
+            this.btn_Guest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Guest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Guest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Guest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Guest.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(40)))), ((int)(((byte)(45)))));
+            this.btn_Guest.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Guest.ForeColor = System.Drawing.Color.White;
+            this.btn_Guest.Location = new System.Drawing.Point(21, 0);
+            this.btn_Guest.Name = "btn_Guest";
+            this.btn_Guest.Size = new System.Drawing.Size(180, 37);
+            this.btn_Guest.TabIndex = 0;
+            this.btn_Guest.Text = "Khách hàng";
+            this.btn_Guest.Click += new System.EventHandler(this.btn_Guest_Click_1);
             // 
             // FEmployee
             // 
@@ -435,6 +453,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txt_SDT;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button btn_Food;
         private Guna.UI2.WinForms.Guna2Button btn_DT;
         private Guna.UI2.WinForms.Guna2Button btn_Work;
         private Guna.UI2.WinForms.Guna2Button btn_Emp;

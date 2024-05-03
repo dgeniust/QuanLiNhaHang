@@ -60,8 +60,7 @@ namespace QuanLiNhaHang
             try
             {
                 conn.Open();
-                //Người đăng nhập là KHÁCH
-                string query = "SELECT dbo.getRole('"+tk+"')";
+                string query = "SELECT dbo.getRole('"+tk+"')"; 
                 DataTable dt = new DataTable();
                 dt = db.LoadData(query);
                 foreach (DataRow dr in dt.Rows)
@@ -90,14 +89,6 @@ namespace QuanLiNhaHang
                     fh.Show();
                     this.Hide();
                 }
-                /*string s = "Select * from Nhanvien where manv = '" + tk + "'";
-                DataTable dt = new DataTable();
-                SqlDataAdapter adapter = new SqlDataAdapter(s, conn);
-                adapter.Fill(dt);
-                foreach (DataRow dr in dt.Rows)
-                {
-                    MessageBox.Show(dr[0].ToString() + " " + dr[1].ToString());
-                }*/
             }
             catch (Exception ex)
             {
@@ -109,14 +100,23 @@ namespace QuanLiNhaHang
             }
 
         }
-        public void ShowData(string type, string mathuchthe)
-        {
-
-        }
         public void Register(object sender, EventArgs e)
         {
-            string query = string.Format("exec AddThuckhach '{0}','{1}','{2}'", uC_Register1.TXT_USER.Text, uC_Register1.TXT_NAME.Text, uC_Register1.TXT_SDT.Text);
-            db.ThucThi(query);
+            if(uC_Register1.CB_GUEST.Checked)
+            {
+                string query = string.Format("exec AddThuckhach '{0}','{1}','{2}'", uC_Register1.TXT_USER.Text, uC_Register1.TXT_NAME.Text, uC_Register1.TXT_SDT.Text);
+                db.ThucThi(query);
+            }
+            else if(uC_Register1.CB_EMPLOYEE.Checked)
+            {
+                string query = string.Format("exec p_InsertNhanvien '{0}',N'{1}','{2}','{3}'", uC_Register1.TXT_USER.Text, uC_Register1.TXT_NAME.Text, uC_Register1.TXT_SDT.Text,"CV04");
+                db.ThucThi(query);
+            }
+            else if(uC_Register1.CB_MANAGE.Checked)
+            {
+                string query = string.Format("exec p_InsertNhanvien '{0}',N'{1}','{2}','{3}'", uC_Register1.TXT_USER.Text, uC_Register1.TXT_NAME.Text, uC_Register1.TXT_SDT.Text, "CV07");
+                db.ThucThi(query);
+            }
             if (MessageBox.Show("Đăng kí thành công! Bạn có muốn đăng nhập không?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 uC_Register1.Visible = false;

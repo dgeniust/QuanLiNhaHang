@@ -39,6 +39,15 @@ namespace QuanLiNhaHang.User_Control
             this.lbl_Price.Text = FOOD.gia.ToString()+"đ";
             this.pictureBox.Image = LoadImageFromFile(FOOD.image);
         }
+        public UC_Food(Food FOOD)
+        {
+            InitializeComponent();
+            this.lbl_Ma.Text = FOOD.mamon;
+            this.food = FOOD;
+            this.lbl_Name.Text = FOOD.tenmon;
+            this.lbl_Price.Text = FOOD.gia.ToString() + "đ";
+            this.pictureBox.Image = LoadImageFromFile(FOOD.image);
+        }
         public void AddFood(object sender, EventArgs e)
         {
             DatMon dm = new DatMon(ff.bt.madh, ff.bt.matk, lbl_Ma.Text, Convert.ToInt32(lbl_Number.Text), "NOTE", ff.bt.maban);
@@ -61,7 +70,7 @@ namespace QuanLiNhaHang.User_Control
             this.lbl_Price.Text = FOOD.gia.ToString() + "đ";
             this.pictureBox.Image = LoadImageFromFile(FOOD.image);
         }
-            public Image LoadImageFromFile(string filePath)
+        public Image LoadImageFromFile(string filePath)
         {
             try
             {

@@ -18,10 +18,55 @@ namespace QuanLiNhaHang.User_Control
         public Guna2TextBox TXT_USER => txt_Username;
         public Guna2TextBox TXT_SDT => txt_sdt;
         public Guna2TextBox TXT_NAME => txt_Ten;
+        public Guna2CheckBox CB_GUEST => cb_Guest;
+        public Guna2CheckBox CB_EMPLOYEE => cb_Employee;
+        public Guna2CheckBox CB_MANAGE => cb_Manage;
         public UC_Register()
         {
             InitializeComponent();
         }
         public LinkLabel LINK_LOG => link_Login;
+
+        private void cb_Guest_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_Guest.Checked)
+            {
+                cb_Employee.Enabled = false;
+                cb_Manage.Enabled = false;
+            }
+            else
+            {
+                cb_Employee.Enabled = true;
+                cb_Manage.Enabled = true;
+            }
+        }
+
+        private void cb_Employee_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_Employee.Checked)
+            {
+                cb_Guest.Enabled = false;
+                cb_Manage.Enabled = false;
+            }
+            else
+            {
+                cb_Guest.Enabled = true;
+                cb_Manage.Enabled = true;
+            }
+        }
+
+        private void cb_Manage_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_Manage.Checked)
+            {
+                cb_Guest.Enabled = false;
+                cb_Employee.Enabled = false;
+            }
+            else
+            {
+                cb_Guest.Enabled = true;
+                cb_Employee.Enabled = true;
+            }
+        }
     }
 }

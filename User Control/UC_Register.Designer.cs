@@ -33,14 +33,11 @@
             this.link_Login = new System.Windows.Forms.LinkLabel();
             this.btn_Register = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cb_Register = new Guna.UI2.WinForms.Guna2CheckBox();
             this.txt_sdt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_Ten = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -51,6 +48,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cb_Manage = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.cb_Employee = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.cb_Guest = new Guna.UI2.WinForms.Guna2CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_btn_Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -112,17 +112,6 @@
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(16, 19);
             this.guna2HtmlLabel3.TabIndex = 30;
             this.guna2HtmlLabel3.Text = "or";
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(342, 166);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(19, 25);
-            this.guna2HtmlLabel6.TabIndex = 29;
-            this.guna2HtmlLabel6.Text = "or";
             // 
             // cb_Register
             // 
@@ -209,20 +198,6 @@
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(138, 18);
             this.guna2HtmlLabel4.TabIndex = 22;
             this.guna2HtmlLabel4.Text = "Tên thực khách";
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.Location = new System.Drawing.Point(373, 174);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(259, 10);
-            this.guna2Separator2.TabIndex = 21;
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Location = new System.Drawing.Point(46, 174);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(290, 10);
-            this.guna2Separator1.TabIndex = 20;
             // 
             // linkLabel2
             // 
@@ -338,16 +313,78 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
+            // cb_Manage
+            // 
+            this.cb_Manage.AutoSize = true;
+            this.cb_Manage.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Manage.CheckedState.BorderRadius = 0;
+            this.cb_Manage.CheckedState.BorderThickness = 0;
+            this.cb_Manage.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
+            this.cb_Manage.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Manage.ForeColor = System.Drawing.Color.Black;
+            this.cb_Manage.Location = new System.Drawing.Point(494, 174);
+            this.cb_Manage.Name = "cb_Manage";
+            this.cb_Manage.Size = new System.Drawing.Size(74, 21);
+            this.cb_Manage.TabIndex = 74;
+            this.cb_Manage.Text = "QuanLi";
+            this.cb_Manage.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Manage.UncheckedState.BorderRadius = 0;
+            this.cb_Manage.UncheckedState.BorderThickness = 0;
+            this.cb_Manage.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cb_Manage.CheckedChanged += new System.EventHandler(this.cb_Manage_CheckedChanged);
+            // 
+            // cb_Employee
+            // 
+            this.cb_Employee.AutoSize = true;
+            this.cb_Employee.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Employee.CheckedState.BorderRadius = 0;
+            this.cb_Employee.CheckedState.BorderThickness = 0;
+            this.cb_Employee.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
+            this.cb_Employee.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Employee.ForeColor = System.Drawing.Color.Black;
+            this.cb_Employee.Location = new System.Drawing.Point(313, 174);
+            this.cb_Employee.Name = "cb_Employee";
+            this.cb_Employee.Size = new System.Drawing.Size(91, 21);
+            this.cb_Employee.TabIndex = 73;
+            this.cb_Employee.Text = "NhanVien";
+            this.cb_Employee.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Employee.UncheckedState.BorderRadius = 0;
+            this.cb_Employee.UncheckedState.BorderThickness = 0;
+            this.cb_Employee.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cb_Employee.CheckedChanged += new System.EventHandler(this.cb_Employee_CheckedChanged);
+            // 
+            // cb_Guest
+            // 
+            this.cb_Guest.AutoSize = true;
+            this.cb_Guest.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Guest.CheckedState.BorderRadius = 0;
+            this.cb_Guest.CheckedState.BorderThickness = 0;
+            this.cb_Guest.CheckedState.FillColor = System.Drawing.Color.RoyalBlue;
+            this.cb_Guest.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
+            this.cb_Guest.ForeColor = System.Drawing.Color.Black;
+            this.cb_Guest.Location = new System.Drawing.Point(130, 174);
+            this.cb_Guest.Name = "cb_Guest";
+            this.cb_Guest.Size = new System.Drawing.Size(97, 21);
+            this.cb_Guest.TabIndex = 72;
+            this.cb_Guest.Text = "ThucKhach";
+            this.cb_Guest.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.cb_Guest.UncheckedState.BorderRadius = 0;
+            this.cb_Guest.UncheckedState.BorderThickness = 0;
+            this.cb_Guest.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.cb_Guest.CheckedChanged += new System.EventHandler(this.cb_Guest_CheckedChanged);
+            // 
             // UC_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cb_Manage);
+            this.Controls.Add(this.cb_Employee);
+            this.Controls.Add(this.cb_Guest);
             this.Controls.Add(this.pbox_btn_Exit);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.link_Login);
             this.Controls.Add(this.btn_Register);
             this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.cb_Register);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
@@ -358,8 +395,6 @@
             this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.txt_Ten);
             this.Controls.Add(this.guna2HtmlLabel4);
-            this.Controls.Add(this.guna2Separator2);
-            this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -380,7 +415,6 @@
         private System.Windows.Forms.LinkLabel link_Login;
         private Guna.UI2.WinForms.Guna2Button btn_Register;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2CheckBox cb_Register;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -388,8 +422,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2TextBox txt_Ten;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
@@ -398,6 +430,9 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private Guna.UI2.WinForms.Guna2TextBox txt_Username;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2CheckBox cb_Manage;
+        private Guna.UI2.WinForms.Guna2CheckBox cb_Employee;
+        private Guna.UI2.WinForms.Guna2CheckBox cb_Guest;
     }
 
 }
